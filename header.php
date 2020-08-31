@@ -28,3 +28,10 @@
     $logo = get_field('logo', 'option');
     ?>
 </head>
+<body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
+    <div id="page" class="site">
+        <header class="header">
+            <!-- top bar -->
+            <div class="top-bar border-bottom">
+                <div class="container">
