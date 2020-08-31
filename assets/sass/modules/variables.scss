@@ -58,24 +58,46 @@ $font-family-base:        $font-family-sans-serif !default;
 $color-primary: #000;
 
 //Black
-$black: #000;
-$medium-black: #1d1d1d;
-$darker-gray: #272727;
-$dark-gray:#101010;
-$medium-gray: #888;
-$light-gray: #d1d1d1;
+$black: #000 !default;
+
+//Gray
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
 
 //White
-$white: #fff;
+$white: #fff !default;
 
 //Red
-$soft-red: #dc535b;
-$medium-red: #c9373f;
+$red: #dc3545 !default;
 
 //Blue
-$aqua: #00add0;
+$blue: #617a7c;
+$cyan: #17a2b8 !default;
+
 //Purple
-$magenta: #930f5b;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+
+//Pink
+$pink: #d63384 !default;
+
+//Orange
+$orange: #fd7e14 !default;
+$rp_orange: #ef9020 !default;
+
+//Yellow
+$yellow: #ffc107 !default;
+
+//Green
+$green: #28a745 !default;
+$teal: #20c997 !default;
 
 // Base
 
