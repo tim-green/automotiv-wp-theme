@@ -23,3 +23,8 @@
     }
     ?>
     <?php wp_head(); 
+    global $woocommerce;
+    
+    $logo = get_field('logo', 'option');
+    ?>
+</head>
