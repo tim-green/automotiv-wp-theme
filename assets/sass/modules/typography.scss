@@ -5,25 +5,27 @@
 
 */
 
-body{
-  line-height: $base-line-height;
+a {
+    text-decoration: none;
 }
 
-ol{
-  text-align: left;
+b, strong {
+    font-weight: $font-weight-bold;
+}
 
-  li{
+h1,h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: $font-weight-bold;
+}
 
+.title-border {
+  position: relative;
+  &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 5px;
+      width: 10%;
+      background-color: $primary;
   }
-}
-
-code{
-  font-weight: bold;
-  padding: 2px 5px;
-  border-radius: 3px;
-}
-
-a{
-  color: $black;;
-  font-weight: bold;
 }
