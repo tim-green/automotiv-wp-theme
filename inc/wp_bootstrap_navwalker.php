@@ -118,7 +118,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 					if ( $depth > 0 ) {
 						$atts['class']	= 'dropdown-item'; // Dropdown item
 					} else {
-						$atts['class']	= 'nav-link'; // First level
+						$atts['class']	= 'nav-link text-white px-lg-4 px-xl-5'; // First level
 					}
 				}
 				$atts       = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args );
