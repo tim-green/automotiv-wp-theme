@@ -81,6 +81,27 @@ $theme_version = '1.0.0';
 		add_action( 'after_setup_theme', 'themes_starter_setup_theme' );
 	endif;
 
+	/**
+	 * Add Advanced Custom Fields Option page
+	 *
+	 * Added for backwards compatibility to support pre 5.2.0 WordPress versions.
+	 *
+	 * @since v1.0
+	 */
+
+	if( function_exists('acf_add_options_page') ) {
+	
+		acf_add_options_page(array(
+			'icon_url'		=> 'dashicons-feedback',
+			'page_title' 	=> 'Site Options',
+			'menu_title'	=> 'Site Options',
+			'menu_slug' 	=> 'site-options',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false
+		));
+		
+		
+	}
 
 	/**
 	 * Fire the wp_body_open action.
