@@ -54,3 +54,14 @@
                         <?php endwhile; ?>
                     <?php endif; ?>
                         </div>
+    <div class="nav-wrapper bg-primary d-none d-lg-block border-top">
+        <div class="container">
+        <?php wp_nav_menu(
+            array(
+                'container' => 'ul',
+                'menu_class' => 'nav nav-fill justify-content-between',
+                'walker'          => new WP_Bootstrap_Navwalker(),
+            ));
+        ?>
+        </div>
+    </div>
