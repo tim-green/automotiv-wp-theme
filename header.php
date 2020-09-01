@@ -35,3 +35,22 @@
             <!-- top bar -->
             <div class="top-bar border-bottom">
                 <div class="container">
+                    <div class="row align-items-center py-2">
+                        <div class="col-lg-6 d-none d-lg-block">
+                        <?php if( have_rows('header_info','option') ): ?>
+                        <?php while( have_rows('header_info','option') ): the_row(); 
+                            $orders = get_sub_field('orders_over_text');
+                            $shipping = get_sub_field('shipping_text');
+                            ?>
+                                <span class="border-right mr-2 pr-2"><?php the_sub_field('orders_over_text','option'); ?> </span>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php if( have_rows('header_info','option') ): ?>
+                        <?php while( have_rows('header_info','option') ): the_row(); 
+                            $orders = get_sub_field('orders_over_text');
+                            $shipping = get_sub_field('shipping_text');
+                            ?>
+                                <span><strong><?php the_sub_field('shipping_text','option'); ?></strong></span>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                        </div>
