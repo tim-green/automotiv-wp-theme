@@ -43,7 +43,7 @@ $theme_version = '1.0.0';
 		function themes_starter_setup_theme() {
 
 			// Make theme available for translation: Translations can be filed in the /languages/ directory
-			load_theme_textdomain( 'my-theme', get_template_directory() . '/languages' );
+			load_theme_textdomain( 'automotiv', get_template_directory() . '/languages' );
 
 			// Theme Support
 			add_theme_support( 'title-tag' );
