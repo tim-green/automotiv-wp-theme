@@ -163,7 +163,7 @@ $theme_version = '1.0.0';
 	 */
 	function get_page_number() {
 		if ( get_query_var( 'paged' ) ) {
-			print ' | ' . __( 'Page ' , 'my-theme') . get_query_var( 'paged' );
+			print ' | ' . __( 'Page ' , 'automotiv') . get_query_var( 'paged' );
 		}
 	}
 
