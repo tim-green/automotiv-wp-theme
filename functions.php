@@ -364,7 +364,7 @@ $theme_version = '1.0.0';
 				case 'trackback' :
 			?>
 			<li class="post pingback">
-				<p><?php _e( 'Pingback:', 'my-theme' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'my-theme' ), '<span class="edit-link">', '</span>' ); ?></p>
+				<p><?php _e( 'Pingback:', 'automotiv' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'automotiv' ), '<span class="edit-link">', '</span>' ); ?></p>
 			<?php
 					break;
 				default :
