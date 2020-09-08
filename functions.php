@@ -381,23 +381,23 @@ $theme_version = '1.0.0';
 								echo get_avatar( $comment, $avatar_size );
 
 								/* translators: 1: comment author, 2: date and time */
-								printf( __( '%1$s, %2$s', 'my-theme' ),
+								printf( __( '%1$s, %2$s', 'automotiv' ),
 									sprintf( '<span class="fn">%s</span>', get_comment_author_link() ),
 									sprintf( '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
 										esc_url( get_comment_link( $comment->comment_ID ) ),
 										get_comment_time( 'c' ),
 										/* translators: 1: date, 2: time */
-										//sprintf( __( '%1$s - %2$s', 'my-theme' ), get_comment_time( $theme_dateformat ), get_comment_time( $theme_timeformat ) )
-										sprintf( __( '%1$s ago', 'my-theme' ), human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) )
+										//sprintf( __( '%1$s - %2$s', 'automotiv' ), get_comment_time( $theme_dateformat ), get_comment_time( $theme_timeformat ) )
+										sprintf( __( '%1$s ago', 'automotiv' ), human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) )
 									)
 								);
 							?>
 
-							<?php edit_comment_link( __( 'Edit', 'my-theme' ), '<span class="edit-link">', '</span>' ); ?>
+							<?php edit_comment_link( __( 'Edit', 'automotiv' ), '<span class="edit-link">', '</span>' ); ?>
 						</div><!-- .comment-author .vcard -->
 
 						<?php if ( '0' === $comment->comment_approved ) : ?>
-							<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'my-theme' ); ?></em>
+							<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'automotiv' ); ?></em>
 							<br />
 						<?php endif; ?>
 
@@ -406,7 +406,7 @@ $theme_version = '1.0.0';
 					<div class="comment-content"><?php comment_text(); ?></div>
 
 					<div class="reply">
-						<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'my-theme' ) . ' <span>&darr;</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+						<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'automotiv' ) . ' <span>&darr;</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 					</div><!-- .reply -->
 				</article><!-- #comment-## -->
 
