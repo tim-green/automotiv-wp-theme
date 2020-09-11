@@ -19,3 +19,5 @@ if (!function_exists('change_woocommerce_order_number')) {
         return $new_order_id;
     }
 }
+// cart - remove other shipping options if we have $4.50 shipping
+add_filter('woocommerce_package_rates', 'custom_shipping_option', 20, 2 );
