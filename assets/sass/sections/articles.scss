@@ -10,6 +10,16 @@
 .main{
   padding: 0 30px;
 }
+
+.article-single {
+    .jumbotron {
+        .container {
+            position: relative;
+            z-index: 999;
+        }
+    }
+}
+
 .hero-overlay {
     position: absolute;
     top: 0;
