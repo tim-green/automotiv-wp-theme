@@ -523,6 +523,7 @@ $theme_version = '1.0.0';
 		// wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css', false, $theme_version, 'all' );
 		wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/app.min.css', false, $theme_version, 'all' ); // main.scss: Compiled Framework source + custom styles
 		
+		wp_enqueue_style( 'slicktheme', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', false, $theme_version, 'all' ); // slick theme from jsdelivr cdn
 		if ( is_rtl() ) {
 			wp_enqueue_style( 'rtl', get_template_directory_uri() . '/assets/css/rtl.min.css', false, $theme_version, 'all' );
 		}
