@@ -1,6 +1,6 @@
 <?php
 /*
-  ACF Flexible Content - Templat Name Here
+  ACF Flexible Content - Template Name Here
   
   Field Example
   <?php the_sub_field('text'); ?>
