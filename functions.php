@@ -100,7 +100,15 @@ $theme_version = '1.0.0';
 			'redirect'		=> false
 		));
 		
-		
+		acf_add_options_page(array(
+			'icon_url'		=> 'dashicons-cover-image',
+			'page_title' 	=> 'Slider',
+			'menu_title'	=> 'Slider',
+			'menu_slug' 	=> 'slider',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false
+		));
+
 	}
 
 	/**
