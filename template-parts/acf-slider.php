@@ -22,8 +22,8 @@
     $button_link = get_sub_field('button_link','option');
 
     ?>
-     <div class="slide" style="background-image: url(<?php echo $image['url']; ?>);">
-            <div class="slide-content d-flex align-items-center">
+     <div class="slide">
+            <div class="slide-content d-flex align-items-center" style="background-image: url(<?php echo $image['url']; ?>);">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-lg-6">
