@@ -81,6 +81,24 @@ $theme_version = '1.0.0';
 		add_action( 'after_setup_theme', 'themes_starter_setup_theme' );
 	endif;
 
+
+	/**
+	 * Add CSS to ACF Admin
+	 *
+	 * 
+	 *
+	 * @since v1.0
+	 */
+	function acf_admin_styles() {
+		?>
+		<style type="text/css">
+		.w30 {width: 30%}
+		</style>
+		<?php
+	}
+	
+	add_action('acf/input/admin_head', 'acf_admin_styles');
+
 	/**
 	 * Add Advanced Custom Fields Option page
 	 *
