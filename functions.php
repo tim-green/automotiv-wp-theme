@@ -74,6 +74,9 @@ $theme_version = '1.0.0';
 			update_option( 'image_default_link_type', 'none' );
 			update_option( 'image_default_size', 'large' );
 
+			// Additional Image Sizes
+			add_image_size( 'acf-800-600', 800, 600 );
+			
 			// Custom CSS-Styles of Wordpress Gallery
 			add_filter( 'use_default_gallery_style', '__return_false' );
 
