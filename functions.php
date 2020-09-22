@@ -130,6 +130,15 @@ $theme_version = '1.0.0';
 			'redirect'		=> false
 		));
 
+		acf_add_options_page(array(
+			'icon_url'		=> 'dashicons-testimonial',
+			'page_title' 	=> 'Frequently Asked Questions',
+			'menu_title'	=> 'FAQs',
+			'menu_slug' 	=> 'faqs',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false
+		));
+
 	}
 
 	/**
