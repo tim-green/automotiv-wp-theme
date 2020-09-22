@@ -299,3 +299,37 @@ $slick-opacity-not-active: 0.25 !default;
         }
     }
 }
+
+//Arrows
+.slick-arrow{
+    font-size: 2.7em;
+    color: $white;
+}
+
+.motiv-slide-next, .motiv-slide-prev {
+    position: absolute;
+    display: block;
+    height: 25px;
+    width: 25px;
+    opacity: .5;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s ease-out;
+    z-index: 99999;
+
+    &:hover{
+        opacity: 1;
+        transition: .5s ease-in;
+    }
+}
+
+.motiv-slide-next{
+    right: 25px;
+}
+
+.motiv-slide-prev {
+    left: 25px;
+}
+
+
+
