@@ -135,7 +135,8 @@ $theme_version = '1.0.0';
 			'menu_title'	=> 'FAQs',
 			'menu_slug' 	=> 'faqs',
 			'capability'	=> 'edit_posts',
-			'redirect'		=> false
+			'redirect'		=> false,
+			'position'		=> '23.3'
 		));
 
 	}
