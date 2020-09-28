@@ -526,6 +526,8 @@ $theme_version = '1.0.0';
 			'top-menu' => 'Top Menu',
 			'main-menu' => 'Main Navigation Menu',
 			'footer-menu' => 'Footer Menu',
+			'footer-menu-1' => 'Footer Position 2',
+			'footer-menu-2' => 'Footer Position 3',
 		) );
 	}
 
