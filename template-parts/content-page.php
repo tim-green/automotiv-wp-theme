@@ -13,6 +13,7 @@
     <?php
     the_content();
 
+    get_template_part('partials/acf-flexible-loop');
     wp_link_pages(
         array(
         'before' => '<div class="page-links">' . esc_html__('Pages:', 'automotiv'),
