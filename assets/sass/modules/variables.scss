@@ -110,6 +110,12 @@ $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-800 !default;
 
+// Colours
+
+$color-primary: $primary;
+$primary-color:$primary;
+$secondary-color:$secondary;
+$third-colour: $dark;
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval: 8% !default;
