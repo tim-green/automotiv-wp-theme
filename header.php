@@ -55,6 +55,15 @@
                     <?php endif; ?>
                         </div>
     <div class="nav-wrapper bg-primary d-none d-lg-block border-top">
+                        <?php wp_nav_menu(
+                            array(
+                                'theme_location' => 'top-menu',
+                                'depth' => 2,
+                                'container' => 'a',
+                                'menu_class' => 'mr-0',
+                                'add_li_class' => 'border-right pr-2 mr-2'
+                            ));
+                        ?>
         <div class="container">
         <?php wp_nav_menu(
             array(
