@@ -69,6 +69,7 @@
             array(
                 'container' => 'ul',
                 'theme_location' => 'main-menu',
+                'depth' => 2,
                 'menu_class' => 'nav nav-fill justify-content-between',
                 'walker'          => new WP_Bootstrap_Navwalker(),
             ));
