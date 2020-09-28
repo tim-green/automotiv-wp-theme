@@ -1,0 +1,17 @@
+/*Top Navigation*/
+#menu-top-menu{
+    margin:0;
+    padding: 0;
+    
+    li{
+        width: auto;
+        display: inline;
+        text-transform: capitalize;
+
+        &:last-child{
+            border-right: 0 !important;
+            margin-right: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+}
