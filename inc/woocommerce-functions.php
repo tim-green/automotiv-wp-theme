@@ -32,6 +32,27 @@ function automotiv_wc_register_post_statuses() {
     ) );
     }
 add_filter( 'init', 'automotiv_wc_register_post_statuses' );
+// add custom colour for status
+add_action('admin_head', 'styling_admin_order_list' );
+function styling_admin_order_list() {
+    global $pagenow, $post;
+
+    if( $pagenow != 'edit.php') return; // Exit
+    //if( get_post_type($post->ID) != 'shop_order' ) return; // Exit
+
+    // HERE we set your custom status
+    $order_status = 'ready-shipping';
+    ?>
+<style>
+.order-status.status-<?php echo sanitize_title($order_status);
+
+?> {
+    background: #d7f8a7;
+    color: #0c942b;
+}
+</style>
+<?php
+}
 // cart - remove other shipping options if we have $4.50 shipping
 add_filter('woocommerce_package_rates', 'custom_shipping_option', 20, 2 );
 /**
