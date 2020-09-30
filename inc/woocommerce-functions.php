@@ -62,6 +62,8 @@ function remove_shop_breadcrumbs(){
         remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
  
 }
+// cart - remove suggestions from cart collateral
+remove_action('woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
 // cart - remove other shipping options if we have $4.50 shipping
 add_filter('woocommerce_package_rates', 'custom_shipping_option', 20, 2 );
 /**
