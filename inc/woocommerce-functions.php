@@ -53,6 +53,15 @@ function styling_admin_order_list() {
 </style>
 <?php
 }
+// loop - remove breadcrumbs from shop page
+add_action('template_redirect', 'remove_shop_breadcrumbs' );
+
+function remove_shop_breadcrumbs(){
+ 
+    if (!is_product())
+        remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
+ 
+}
 // cart - remove other shipping options if we have $4.50 shipping
 add_filter('woocommerce_package_rates', 'custom_shipping_option', 20, 2 );
 /**
