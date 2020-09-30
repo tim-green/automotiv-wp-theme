@@ -19,6 +19,19 @@ if (!function_exists('change_woocommerce_order_number')) {
         return $new_order_id;
     }
 }
+// Custom Order status
+// register the status
+function automotiv_wc_register_post_statuses() {
+    register_post_status( 'wc-ready-shipping', array(
+    'label' => _x( 'Ready for shipping', 'WooCommerce Order status', 'text_domain' ),
+    'public' => true,
+    'exclude_from_search' => false,
+    'show_in_admin_all_list' => true,
+    'show_in_admin_status_list' => true,
+    'label_count' => _n_noop( 'Ready for shipping (%s)', 'Ready for shipping (%s)', 'text_domain' )
+    ) );
+    }
+add_filter( 'init', 'automotiv_wc_register_post_statuses' );
 // cart - remove other shipping options if we have $4.50 shipping
 add_filter('woocommerce_package_rates', 'custom_shipping_option', 20, 2 );
 /**
