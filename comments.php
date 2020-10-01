@@ -41,4 +41,5 @@ if ( post_password_required() ) {
 				);
 			}
 			?>
+		<?php the_comments_navigation(); ?>
 </div><!-- #comments -->
