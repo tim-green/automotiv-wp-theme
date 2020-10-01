@@ -69,6 +69,8 @@ function remove_shop_breadcrumbs(){
         remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
  
 }
+// product - remove additional information tab
+add_filter( 'woocommerce_product_tabs', 'remove_product_tabs', 9999 );
 // cart - remove suggestions from cart collateral
 remove_action('woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
 // cart - remove other shipping options if we have $4.50 shipping
