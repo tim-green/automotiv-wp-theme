@@ -32,6 +32,13 @@ function automotiv_wc_register_post_statuses() {
     ) );
     }
 add_filter( 'init', 'automotiv_wc_register_post_statuses' );
+
+// add status to list
+function automotiv_wc_add_order_statuses( $order_statuses ) {
+    $order_statuses['wc-ready-shipping'] = _x( 'Ready for shipping', 'WooCommerce Order status', 'text_domain' );
+    return $order_statuses;
+    }
+add_filter( 'wc_order_statuses', 'automotiv_wc_add_order_statuses' );
 // add custom colour for status
 add_action('admin_head', 'styling_admin_order_list' );
 function styling_admin_order_list() {
