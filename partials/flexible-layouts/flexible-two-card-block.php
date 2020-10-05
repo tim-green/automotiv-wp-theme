@@ -26,7 +26,9 @@ $textLink = get_sub_field('link_text');
     
 
     <div class="card-body position-relative">
-    <h4 class="text-white text-center h2"></h4>
+    <h4 class="text-white text-center h2">
+    <?php echo $header; ?>
+    </h4>
 
     <p class="text-white text-center"></p>
 
