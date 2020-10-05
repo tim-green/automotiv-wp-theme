@@ -8,4 +8,9 @@
 
 .card-resource{
     background-size:  cover;
+  
+    &:hover{
+      cursor: pointer;
+    }
+  
   }
