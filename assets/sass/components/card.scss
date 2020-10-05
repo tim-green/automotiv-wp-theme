@@ -13,4 +13,26 @@
       cursor: pointer;
     }
   
+    .card-body{
+      z-index: 99;
+  
+      a{
+        text-decoration: underline;
+        color: $white;
+        transition: ease-out 3s;
+
+        &:hover{
+            text-decoration: none;
+            transition: ease-in 3s;
+        }
+      }
+    }
+  }
+  
+  .card-overlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: $black, $alpha: 0.5);
   }
