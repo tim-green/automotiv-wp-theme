@@ -23,6 +23,11 @@ $newsletter_form_id = get_field('footer_newsletter_signup_field_id', 'option');
 
 <?php wp_footer(); ?>
 <?php the_field('footer_embed', 'option'); ?>
+
+<script>
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+</script> 
 </body>
 
 </html>
