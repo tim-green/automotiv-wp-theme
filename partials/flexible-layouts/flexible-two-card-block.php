@@ -21,9 +21,9 @@ $link = get_sub_field('link');
 $textLink = get_sub_field('link_text');
 ?>
 
-<div class="col-12 col-lg-6 mb-5">
-    <div class="card card-resource py-5" style="background: url(<?php echo $bgimage; ?>);">
-    </div>
+<div class="col-12 col-lg-6 mb-5 mb-lg-0">
+    <div class="card card-resource py-5" style="background: url(<?php echo $bgImage; ?>); background-size: cover;">
+    
 
     <div class="card-body position-relative">
     <h4 class="text-white text-center h2"></h4>
