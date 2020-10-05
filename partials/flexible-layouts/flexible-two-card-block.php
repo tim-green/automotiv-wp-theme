@@ -30,7 +30,10 @@ $textLink = get_sub_field('link_text');
     <?php echo $header; ?>
     </h4>
 
-    <p class="text-white text-center"></p>
+    
+    <p class="text-white text-center">
+        <?php echo $content; ?>
+    </p>
 
     <a href="" class="text-white text-center d-block mt-5"></a>
     </div>
