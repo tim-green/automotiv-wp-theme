@@ -17,7 +17,6 @@ $bgImage = get_sub_field('background_image');
 $header = get_sub_field('header');
 $content = get_sub_field('content');
 $link = get_sub_field('link');
-
 $textLink = get_sub_field('link_text');
 ?>
 
@@ -35,9 +34,12 @@ $textLink = get_sub_field('link_text');
         <?php echo $content; ?>
     </p>
 
-    <a href="" class="text-white text-center d-block mt-5"></a>
+        <a href="<?php echo $link; ?>" class="text-center d-block mt-5">
+            <?php echo $textLink; ?>
+        </a>
     </div>
     <div class="hero-overlay"></div>
+
     </div>
 </div>
 
