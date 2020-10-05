@@ -13,7 +13,7 @@
 <?php while( have_rows('two_card_blocks') ): the_row(); 
 
 // vars
-$bgimage = get_sub_field('background_image');
+$bgImage = get_sub_field('background_image');
 $header = get_sub_field('header');
 $content = get_sub_field('content');
 $link = get_sub_field('link');
