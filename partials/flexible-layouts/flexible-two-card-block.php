@@ -18,6 +18,7 @@ $header = get_sub_field('header');
 $content = get_sub_field('content');
 $link = get_sub_field('link');
 
+$textLink = get_sub_field('link_text');
 ?>
 
 <div class="col-12 col-lg-6 mb-5">
