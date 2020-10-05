@@ -21,7 +21,7 @@ $link = get_sub_field('link');
 ?>
 
 <div class="col-12 col-lg-6 mb-5">
-    <div class="card home-resource py-5">
+    <div class="card card-resource py-5" style="background: url(<?php echo $bgimage; ?>);">
     </div>
 
     <div class="card-body position-relative">
