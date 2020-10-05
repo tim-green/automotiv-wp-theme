@@ -32,6 +32,7 @@ $link = get_sub_field('link');
     <a href="" class="text-white text-center d-block mt-5"></a>
     </div>
     <div class="hero-overlay"></div>
+    </div>
 </div>
 
     <?php endwhile; ?>
