@@ -4,6 +4,14 @@
   +
 
 */
+
+/* The Shop */
+.products {
+    .size-woocommerce_thumbnail {
+        max-width: 100%;
+        height: auto;
+    }
+
     .added_to_cart {
         display: none;
     }
