@@ -7,3 +7,15 @@
     .added_to_cart {
         display: none;
     }
+    .add_to_cart_button.loading {
+        opacity: 0.5;
+        &:before {
+            margin-right: 5px;
+            content: '';
+            @extend .spinner-border;
+            height: 18px;
+            width: 18px;
+            border-width: 0.2em;
+        }
+    }
+}
