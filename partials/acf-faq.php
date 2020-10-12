@@ -1,30 +1,26 @@
-  <div id="accordion">
-        
-            <?php
-                if( have_rows('question_answer_block') ):
-                    while( have_rows('question_answer_block') ) : the_row();
+<div class="accordion-FAQ">
 
-                        $question = get_sub_field('sub_field');
-                        $answer = get_sub_field('sub_field');
-                    endwhile;
-                else : endif;
-            ?>
+<?php
+    if( have_rows('question_answer_block','option') ):
+        while( have_rows('question_answer_block','option') ) : the_row();
 
+        $question = get_sub_field('question','option');
+        $answer = get_sub_field('answer','option');
+?>
 
-        <div class="card">
-            <div class="card-header" id="">
-            <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                </button>
-                <?php echo $question; ?>
-            </h5>
-            </div>
+<div class="wrap-<?php echo get_row_index(); ?> ">
+    <input type="radio" id="tab-<?php echo get_row_index(); ?> " name="tabs">
+    <label class="bg-primary text-white" for="tab-<?php echo get_row_index(); ?> ">
+	<div class="FAQ-question"><?php echo $question; ?></div>
+	<div class="cross"></div>
+	</label>
+    <div class="FAQ-content">
+<?php echo $answer; ?>
+	</div>
+  </div>
 
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-            <?php echo $answer; ?>
-            </div>
-            </div>
-        </div>
-
-        </div>
+<?php 
+     endwhile;
+     else : endif;
+?>
+</div>
