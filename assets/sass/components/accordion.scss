@@ -13,7 +13,7 @@ input {
     display: none;
 }
 
-label {
+.accordion-FAQ label {
     display: flex;
     width: 100%;
     height: 50px;
@@ -27,7 +27,7 @@ label {
     }
 }
 
-label div:first-child {
+.accordion-FAQ label div:first-child {
     width: 100%;
     line-height: 45px;
     margin-left: 10px;
