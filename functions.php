@@ -323,6 +323,16 @@ $theme_version = '1.0.0';
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>',
 		) );
+
+		// Area 4 - WooCommerce Store
+		register_sidebar( array(
+			'name' => 'Fourth Widget Area (WooCommerce Store)',
+			'id' => 'fourth_widget_area',
+			'before_widget' => '<aside class="woo-side">',
+			'after_widget' => '</aside>',
+			'before_title' => '<p class="h6">',
+			'after_title' => '</p>',
+		) );
 	}
 	add_action( 'widgets_init', 'themes_starter_widgets_init' );
 
