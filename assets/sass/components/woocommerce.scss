@@ -27,5 +27,33 @@
         }
     }
 }
+//PWB - Widget Plugin
+// Styles Perfect Brands for WooCommerce
+
+ul.pwb-row{
+    padding:0;
+    list-style: none;
+
+    li {
+       padding-bottom: .5em;
+       
+       ::before{
+            font-family: 'FontAwesome';
+            content: '\f054';
+            padding-right: .08em;
+       }
+       
+       a{ 
+           color: $black;
+
+           &:hover{
+            text-decoration: none ;
+            color: $secondary;
+        }
+       }
+
+        
+    }
+}
 .woocommerce-pagination {
     display: block;
