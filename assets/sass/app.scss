@@ -32,6 +32,19 @@
 
 */
 
+@import "plugins/slick";
+
+/*
+
+ ==== Sections ====
+
+*/
+
+@import "sections/header";
+@import "sections/main";
+@import "sections/articles";
+@import "sections/sidebar";
+@import "sections/footer";
 
 
 /*
@@ -47,15 +60,6 @@
 @import "components/woocommerce-blocks";
 @import "components/woocommerce";
 
-/*
-
- ==== Sections ====
-
-*/
-
-@import "sections/header";
-@import "sections/main";
-@import "sections/footer";
 
 
 /*
