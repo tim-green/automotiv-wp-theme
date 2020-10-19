@@ -69,5 +69,54 @@ ul.pwb-row{
     padding: .3em .5em;
     margin-bottom: 1.7em;
 }
+
+//Categories - Sidebar
+.product-categories{
+    padding-left: 0;
+    border: 1px solid $lighest-gray;
+    border-radius: .25rem;
+
+    :last-child{
+        border-bottom: 0;
+    }
+
+    .cat-item{
+        list-style: none;
+        border-bottom: 1px solid $lighest-gray;
+        padding: 0.4em;
+
+        ::before{
+            // font-family: 'FontAwesome';
+            // content: '\f054';
+            padding-right: .9em;
+       }
+
+       &:hover{
+        background: $gray-300;
+        transition: ease-in .5s;
+       }
+
+        a{
+            color: $black;
+            &:hover{
+                color: $secondary;
+                text-decoration: none;
+                
+            }
+        }
+    
+        .count::before{
+            content:"";
+            padding-right: 0;
+        }
+    }
+}
+
+.search-no-results {
+    #selected-vehicle {
+        //display: none;
+    }
+}
+
 .woocommerce-pagination {
     display: block;
