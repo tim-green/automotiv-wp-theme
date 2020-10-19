@@ -3,6 +3,13 @@
 $theme_version = '1.0.0';
 
 	/**
+	 * Include WooCommerce Functions
+	 *
+	 * @since v1.0
+	 */
+	include ('inc/woocommerce-functions.php');
+
+	/**
 	 * Include Theme Customizer
 	 *
 	 * @since v1.0
