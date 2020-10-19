@@ -120,3 +120,15 @@ ul.pwb-row{
 
 .woocommerce-pagination {
     display: block;
+.woocommerce-store-notice__dismiss-link{
+        color: $white;
+        background: $royal-blue;
+
+        &:hover{
+            color: $white;
+        }
+
+        &:after{
+            content:" this Notice"
+        }
+}
