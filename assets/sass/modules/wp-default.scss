@@ -198,7 +198,7 @@
  
  
  /**
-  * Responsive Design using "mixins/_breakpoints.scss"
+  * Responsive Design using
   */
  
  @media (max-width: breakpoint-max(sm)) {
@@ -208,3 +208,9 @@
    }
    
  }
+
+ .is-loading {
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
