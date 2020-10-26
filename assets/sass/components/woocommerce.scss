@@ -133,6 +133,12 @@ ul.pwb-row{
         background: $color-primary;
         color: $white;
     }
+
+    .cart-sku{
+        @include fontSize(12px);
+    }
+   
+}
 .woocommerce-store-notice__dismiss-link{
         color: $white;
         background: $royal-blue;
