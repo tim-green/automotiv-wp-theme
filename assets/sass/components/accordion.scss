@@ -19,6 +19,7 @@ input {
     height: 50px;
     cursor: pointer;
     border: 3px solid darken($color-primary, 18%);
+    transition: border ease-out .5s;
     user-select: none;
 
     &:hover{
