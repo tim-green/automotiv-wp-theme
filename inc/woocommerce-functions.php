@@ -60,6 +60,28 @@ function styling_admin_order_list() {
 </style>
 <?php
 }
+
+ // Update the count on cart item, found on Header 
+ add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
+
+ function woocommerce_header_add_to_cart_fragment( $fragments ) {
+
+    ob_start();
+    echo '<div id="cart-dropdown" class="dropdown w-100">';
+    echo '<a class="btn-primary dropdown-toggle p-2 rounded" role="button" id="dropdown-mini-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">';
+    echo 'Cart <span id="cart-customlocation" class="badge badge-light animated swing">' . WC()->cart->get_cart_contents_count() . '</span></a>';
+
+    echo '<div id="custom-mini-cart" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-mini-cart">';
+    woocommerce_mini_cart(); 
+    echo '</div>';
+    echo '</div>';
+    
+    $fragments['div#cart-dropdown'] = ob_get_clean();
+    
+    return $fragments;
+
+ }
+
 // loop - remove breadcrumbs from shop page
 add_action('template_redirect', 'remove_shop_breadcrumbs' );
 
