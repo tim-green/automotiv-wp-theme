@@ -127,6 +127,12 @@ ul.pwb-row{
 
 .woocommerce-pagination {
     display: block;
+.shop_table{
+    margin-top: 1.5em;
+    thead{
+        background: $color-primary;
+        color: $white;
+    }
 .woocommerce-store-notice__dismiss-link{
         color: $white;
         background: $royal-blue;
