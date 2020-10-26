@@ -97,6 +97,14 @@ add_filter( 'woocommerce_product_tabs', 'remove_product_tabs', 9999 );
 remove_action('woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
 // cart - remove other shipping options if we have $4.50 shipping
 add_filter('woocommerce_package_rates', 'custom_shipping_option', 20, 2 );
+// checkout - place order button text
+add_filter('woocommerce_order_button_text', 'checkout_place_order_button_text');
+
+function checkout_place_order_button_text($order_button_text)
+{
+    return 'Place Order'; // new text is here
+}
+
 /**
  * Related Products Args.
  *
