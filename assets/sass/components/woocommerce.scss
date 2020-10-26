@@ -61,12 +61,15 @@ ul.pwb-row{
            &:hover{
             text-decoration: none ;
             color: $secondary;
+            transition: ease-in 3s;
         }
        }
 
         
     }
 }
+
+
 // Styles Perfect Brands for WooCommerce - Brands Dropdown
 .pwb-dropdown-widget{
     border: 1px solid $lighest-gray;
