@@ -127,9 +127,15 @@ ul.pwb-row{
 
 .woocommerce-pagination {
     display: block;
+.woocommerce-shipping-totals {
     small {
         font-size: 12px;
     }
+
+    .form-check{
+        padding-left: 0;
+    }
+}
 .shop_table{
     margin-top: 1.5em;
     thead{
