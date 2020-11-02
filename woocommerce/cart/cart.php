@@ -86,11 +86,10 @@ do_action('woocommerce_before_cart');
 										}
                                         ?>
                                 </p>
-                                <span style="font-size: 12px;">SKU: <?php echo  $_product->get_sku(); ?></span>
+                                <p class="cart-sku">SKU: <?php echo  $_product->get_sku(); ?></p>
                                 <?php if ($_product->get_stock_status() === 'onbackorder') : ?>
                                 <p style="font-size: 12px;" class="text-primary font-weight-bold"><i
-                                        class="las la-exclamation-circle"></i>
-                                    Backordered - this could take up to 30 days to ship</p>
+                                        class="las la-exclamation-circle"></i>Item on Backordered</p>
                                 <?php endif; ?>
                                 <?php if ($_product->get_shipping_class() === 'ground-oversized'): ?>
                                 <p style="font-size: 12px;" class="text-primary font-weight-bold"><i
@@ -155,7 +154,7 @@ do_action('woocommerce_before_cart');
                         <tr>
                             <td colspan="2" class="actions">
 
-                                <button type="submit" class="btn btn btn-outline-secondary" name="update_cart"
+                                <button type="submit" class="btn btn btn-secondary" name="update_cart"
                                     value="<?php esc_attr_e('Update cart', 'woocommerce'); ?>"><?php esc_html_e('Update cart', 'woocommerce'); ?></button>
 
                                 <?php do_action('woocommerce_cart_actions'); ?>
@@ -191,7 +190,7 @@ do_action('woocommerce_before_cart');
             </div>
             <div class="row pb-4">
                 <div class="col-12">
-                    <p class="mb-1"><strong>Having trouble with a coupon? Shipping seems to be weird?</strong></p>
+                    <p class="mb-1 "><strong>Having trouble with a coupon? Shipping seems to be weird?</strong></p>
                     <p>Please email us at <a href="mailto:<?php echo $supportEmail; ?>"><?php echo $supportEmail; ?></a> and
                         we will help!</p>
                 </div>
