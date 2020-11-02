@@ -17,17 +17,14 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <?php 
-    if (is_single() && !is_product()) {
-        article_structured_data($post->ID);
-    }
-    ?>
+  
     <?php wp_head(); 
     global $woocommerce;
     
     $logo = get_field('logo', 'option');
     ?>
 </head>
+
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <div id="page" class="site">
