@@ -38,7 +38,7 @@ defined( 'ABSPATH' ) || exit;
     $loop = new WP_Query( $args );
     
     if ( $loop->have_posts() ) {
-        echo '<div class="home-featured mb-5">';
+        echo '<div class="store-featured mb-5">';
         echo '<h3>Featured Products</h3>';
         echo '<p class="pb-3 mb-3 title-border">Hand Picked by our staff.</p>';
         echo '<div class="row products">';
