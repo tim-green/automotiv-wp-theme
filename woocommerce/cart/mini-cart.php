@@ -25,8 +25,7 @@ do_action('woocommerce_before_mini_cart'); ?>
 <?php if (!WC()->cart->is_empty()) : ?>
 <div class="row px-2">
     <div class="col-6">
-        <p class="mb-0"><a href="<?php echo esc_url(wc_get_page_permalink('cart')); ?>"><strong>View Your
-                    Cart</strong></a>
+        <p class="mb-0"><a href="<?php echo esc_url(wc_get_page_permalink('cart')); ?>"><strong>View Your Cart</strong></a>
         </p>
     </div>
     <div class="col-6 text-right">
