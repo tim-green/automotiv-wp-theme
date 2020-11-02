@@ -37,3 +37,13 @@
     width: 100%;
     background-color: rgba($color: $black, $alpha: 0.5);
   }
+
+
+  //Store featured
+.store-featured .products .card{
+    
+      &:hover{
+        // box-shadow: $gray-100 0px 5px 50px ;
+        // transition: ease-in .5s;
+    }
+}
