@@ -13,7 +13,7 @@ $newsletter_form_id = get_field('footer_newsletter_signup_field_id', 'option');
 ?>
     <div class="copyright bg-primary">
         <div class="container">
-            <p class="text-white m-0 p-2 text-center">&copy; <?php wp_title(); ?> <?php echo date("Y"); ?></p>
+            <p class="text-white m-0 p-2 text-center">&copy; <?php echo get_bloginfo('name'); ?> <?php echo date("Y"); ?></p>
 
         </div>
 
