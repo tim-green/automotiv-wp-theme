@@ -38,6 +38,14 @@
     background-color: rgba($color: $black, $alpha: 0.5);
   }
 
+.card-img-top{
+
+  &:hover{
+    filter: sepia(30%);
+    transition: ease-in-out .8s;
+  }
+}
+  
 
   //Store featured
 .store-featured .products .card{
