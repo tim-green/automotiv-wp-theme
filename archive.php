@@ -50,7 +50,9 @@ get_header();
 		endif;
         ?>
             </div>
+            <?php echo bootstrap_pagination(); ?>
         </div>
+       
 
     </main><!-- #main -->
 </div><!-- #primary -->
