@@ -13,6 +13,16 @@
 
   h1{
     margin: 0 0 30px;
+.slide-arrows {
+  z-index: 99;
+  top: 50%;
+
+  a {
+      &:hover {
+          cursor: pointer;
+      }
+  }
+}
 .home-slider {
   .slide-content {
       height: 370px;
