@@ -99,6 +99,48 @@ add_filter( 'woocommerce_product_tabs', 'remove_product_tabs', 9999 );
 remove_action('woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
 // cart - remove other shipping options if we have $4.50 shipping
 add_filter('woocommerce_package_rates', 'custom_shipping_option', 20, 2 );
+// checkout - custom fields
+function custom_woocommerce_form_field($key, $args, $value = null)
+{
+    $defaults = array(
+        'type' => 'text',
+        'label' => '',
+        'description' => '',
+        'placeholder' => '',
+        'maxlength' => false,
+        'required' => false,
+        'autocomplete' => false,
+        'id' => $key,
+        'class' => array(),
+        'label_class' => array(),
+        'input_class' => array(),
+        'return' => false,
+        'options' => array(),
+        'custom_attributes' => array(),
+        'validate' => array(),
+        'default' => '',
+        'autofocus' => '',
+        'priority' => '',
+    );
+
+    $args = wp_parse_args($args, $defaults);
+    $args = apply_filters('woocommerce_form_field_args', $args, $key, $value);
+
+    if ($args['required']) {
+        $args['class'][] = 'validate-required';
+        $required = ' <abbr class="required" title="' . esc_attr__('required', 'woocommerce') . '">*</abbr>';
+    } else {
+        $required = '';
+    }
+
+    if (is_string($args['label_class'])) {
+        $args['label_class'] = array($args['label_class']);
+    }
+
+    if (is_null($value)) {
+        $value = $args['default'];
+    }
+
 // checkout - place order button text
 add_filter('woocommerce_order_button_text', 'checkout_place_order_button_text');
 
