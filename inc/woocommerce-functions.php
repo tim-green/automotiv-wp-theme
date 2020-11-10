@@ -91,6 +91,8 @@ function remove_shop_breadcrumbs(){
         remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
  
 }
+// product - remove related products
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 // product - remove additional information tab
 add_filter( 'woocommerce_product_tabs', 'remove_product_tabs', 9999 );
 // cart - remove suggestions from cart collateral
