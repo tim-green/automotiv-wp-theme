@@ -23,10 +23,6 @@ get_header();
 		endwhile; // End of the loop.
 		?>
         </div>
-        <div class="col-12 col-lg-4">
-
-            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/dummyimg.jpg">
-        </div>
     </div>
 </div>
 
