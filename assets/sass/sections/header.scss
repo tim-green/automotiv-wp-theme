@@ -13,6 +13,15 @@
 
   h1{
     margin: 0 0 30px;
+.top-bar{
+  span{
+    @include fontSize(14px);
+  }
+}
+
+#menu-top-menu{
+  @include fontSize(14px);
+}
 .slide-arrows {
   z-index: 99;
   top: 50%;
