@@ -51,7 +51,8 @@
                         <?php endwhile; ?>
                     <?php endif; ?>
                         </div>
-    <div class="nav-wrapper bg-primary d-none d-lg-block border-top">
+                        <div class="col-12 col-lg-6 text-center text-lg-right">
+                            
                         <?php wp_nav_menu(
                             array(
                                 'theme_location' => 'top-menu',
@@ -69,7 +70,11 @@
                 'depth' => 2,
                 'menu_class' => 'nav nav-fill justify-content-between',
                 'walker'          => new WP_Bootstrap_Navwalker(),
+                
             ));
         ?>
         </div>
     </div>
+    </header><!-- #masthead -->
+
+    <div id="content" class="site-content">
