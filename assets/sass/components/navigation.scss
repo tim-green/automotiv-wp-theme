@@ -29,8 +29,11 @@
 
     .nav-link{
         color: $white;
+        transition: ease-out .4s;
 
         &:hover{
+            background: darken($color-primary, 8%);
+            transition: ease-in-out .4s;
         }
     }
 }
