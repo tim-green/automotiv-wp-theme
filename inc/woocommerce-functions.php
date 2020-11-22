@@ -241,4 +241,28 @@ function action_after_variations_form_callback() {
     });
     </script>
     <?php
+
+
+/**
+ * Function that shows a message when you've just added a 
+ * product to the cart
+ */
+add_action('wp_footer','add_to_cart_added_woocommerce');
+function add_to_cart_added_woocommerce(){
+    if ( is_shop() || is_product_category() || is_product_tag() ): // Only for archives pages
+        $new_text = __( 'Added. Add again?', 'woocommerce' );
+        ?>
+            <script type="text/javascript">
+                (function($){
+                    $('a.add_to_cart_button').click( function(){
+                        $this = $(this);
+                        $( document.body ).on( 'added_to_cart', function(){
+                            $($this).text('<?php echo $new_text; ?>');
+                        });
+                    });
+
+                })(jQuery); // "jQuery" Working with WP (added the $ alias as argument)
+            </script>
+        <?php
+    endif;
 }
