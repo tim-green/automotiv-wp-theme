@@ -166,4 +166,79 @@ function woocommerce_related_products_args($args)
 
     return $args;
 }
-add_filter('woocommerce_output_related_products_args', 'woocommerce_related_products_args');
+add_filter('woocommerce_output_related_products_args', 'woocommerce_related_products_args');/**
+ * Function that checks if a product is in the cart already
+ * and returns the correct button text
+ */
+
+function change_button_text( $product_id, $button_text ) {
+    foreach( WC()->cart->get_cart() as $item ) {
+        if( $product_id === $item['product_id'] ) {
+            return __('Already in Cart. Add again?', 'woocommerce');
+        }
+    }
+    return $button_text;
+}
+
+/**
+ * Archive pages: For simple products (ajax add to cart button)
+ */
+add_filter( 'woocommerce_product_add_to_cart_text', 'change_ajax_add_to_cart_button_text', 10, 2 );
+function change_ajax_add_to_cart_button_text( $button_text, $product ) {
+    if ( $product->is_type('simple') ) {
+        $button_text = change_button_text( $product->get_id(), $button_text );
+    }
+    return $button_text;
+}
+
+/**
+ * Single product pages: Simple and external products
+ */
+
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'change_single_add_to_cart_button_text', 10, 2 );
+function change_single_add_to_cart_button_text( $button_text, $product ) {
+    if (  ! $product->is_type('variable') ) {
+        $button_text = change_button_text( $product->get_id(), $button_text );
+    }
+    return $button_text;
+}
+
+/**
+ * Single product pages: Variable product and its variations
+ */
+add_action( 'woocommerce_after_variations_form', 'action_after_variations_form_callback' );
+function action_after_variations_form_callback() {
+    global $product;
+
+    // Get the produc variation Ids for the variable product
+    $children_ids = $product->get_visible_children();
+
+    $ids_in_cart  = [];
+
+    // Loop through cart items
+    foreach( WC()->cart->get_cart() as $item ) {
+        if( in_array( $item['variation_id'], $children_ids ) ) {
+            $ids_in_cart[] = $item['variation_id'];
+        }
+    }
+    ?>
+    <script type="text/javascript">
+    jQuery(function($){
+        var b = 'button.single_add_to_cart_button',
+            t = '<?php echo $product->single_add_to_cart_text(); ?>';
+
+        $('form.variations_form').on('show_variation hide_variation found_variation', function(){
+            $.each(<?php echo json_encode($ids_in_cart); ?>, function(j, v){
+                var i = $('input[name="variation_id"]').val();
+                if(v == i && i != 0 ) {
+                    $(b).html('<?php _e('Already in Cart. Add again?', 'woocommerce'); ?>');
+                    return false;
+                } else {
+                    $(b).html(t);
+                }
+            });
+        });
+    });
+    </script>
+    <?php
+}
