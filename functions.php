@@ -72,10 +72,6 @@ $theme_version = '1.0.0';
 			// Enqueue editor styles.
 			add_editor_style( 'style-editor.css' );
 
-			// Date/Time Format
-			$theme_dateformat = get_option( 'date_format' );
-			$theme_timeformat = 'H:i';
-
 			// Default Attachment Display Settings
 			update_option( 'image_default_align', 'none' );
 			update_option( 'image_default_link_type', 'none' );
