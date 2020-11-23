@@ -165,6 +165,21 @@ ul.pwb-row{
     img{
         display: none;
     }
+    .about_paypal{
+        color: $white;
+        font-size: .8em;
+        text-indent: 5px;
+        
+        &:before{
+            content: '- ';
+        }
+
+        &:hover{
+            text-decoration: underline;
+            transition: text-decoration ease-in .5s;
+        }
+    }
+}
 .shop_table{
     margin-top: 1.5em;
     thead{
