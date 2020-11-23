@@ -145,6 +145,22 @@ ul.pwb-row{
     margin-bottom: 0;
 }
 
+/*Payment method*/
+.wc_payment_method{
+    label{
+        background: $royal-blue;
+        padding: .5rem .3rem;
+        transition: border ease-out .5s;
+        width: 100%;
+        color: $white;
+        border: 1px solid darken($color-primary, 18%);
+
+        &:hover{
+            transition: border ease-in .5s;
+            border: 1px solid lighten($color-primary, 10%);
+        }
+    }
+}
 .shop_table{
     margin-top: 1.5em;
     thead{
