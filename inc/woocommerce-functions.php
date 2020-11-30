@@ -8,6 +8,16 @@
  * @package automotiv
  */
 
+/* <?php
+
+/**
+ * WooCommerce Compatibility File
+ *
+ * @link https://woocommerce.com/
+ *
+ * @package automotiv
+ */
+
  //change order number in WooCommerce
 
 add_filter( 'woocommerce_order_number', 'change_woocommerce_order_number' );
