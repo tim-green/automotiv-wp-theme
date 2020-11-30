@@ -33,7 +33,7 @@ if ( ! wc_coupons_enabled() ) { // @codingStandardsIgnoreLine.
 
             <div class="coupon input-group">
                 <input type="text" name="coupon_code" class="input-text form-control"
-                    placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" id="coupon_code" value="" />
+                    placeholder="<?php esc_attr_e( 'Enter the coupon code here!', 'woocommerce' ); ?>" id="coupon_code" value="" />
                 <div class="input-group-append">
                     <button type="submit" class="btn btn-secondary btn-sm" name="apply_coupon"
                         value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_html_e( 'Apply coupon', 'woocommerce' ); ?></button>
