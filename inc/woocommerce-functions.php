@@ -150,8 +150,8 @@ function automotiv_add_email_verification_field_checkout( $fields ) {
 $fields['billing']['billing_email']['class'] = array( 'form-row-first' );
   
 $fields['billing']['billing_em_ver'] = array(
-    'label' => 'Confirm mail Address',
-    'required' => true,
+    'label' => 'Confirm email address',
+    'required' => false,
     'class' => array( 'form-row-last' ),
     'clear' => true,
     'priority' => 999,
