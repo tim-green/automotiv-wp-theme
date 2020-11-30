@@ -49,11 +49,14 @@ if (!$checkout->is_registration_enabled() && $checkout->is_registration_required
                 </div>
             </div>
 
-            <?php do_action('woocommerce_checkout_after_customer_details'); ?>
+           
 
-            <?php endif; ?>
         </div>
         <div class="col-12 col-lg-5">
+        <?php do_action
+            // Coupon Code
+            //('woocommerce_checkout_after_customer_details'); ?>
+
             <?php do_action('woocommerce_checkout_before_order_review_heading'); ?>
 
 
