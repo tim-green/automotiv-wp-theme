@@ -141,6 +141,25 @@ function custom_woocommerce_form_field($key, $args, $value = null)
         $value = $args['default'];
     }
 
+// checkout - add email validation
+
+add_filter( 'woocommerce_checkout_fields' , 'automotiv_add_email_verification_field_checkout' );
+   
+function automotiv_add_email_verification_field_checkout( $fields ) {
+  
+$fields['billing']['billing_email']['class'] = array( 'form-row-first' );
+  
+$fields['billing']['billing_em_ver'] = array(
+    'label' => 'Confirm mail Address',
+    'required' => true,
+    'class' => array( 'form-row-last' ),
+    'clear' => true,
+    'priority' => 999,
+);
+  
+return $fields;
+}
+ 
 // checkout - place order button text
 add_filter('woocommerce_order_button_text', 'checkout_place_order_button_text');
 
