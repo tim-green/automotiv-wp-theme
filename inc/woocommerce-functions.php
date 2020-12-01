@@ -126,6 +126,10 @@ remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_pro
 
 // product - remove related products
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+
+// product - image modification
+remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20);
 // product - remove additional information tab
 add_filter( 'woocommerce_product_tabs', 'remove_product_tabs', 9999 );
 // cart - remove suggestions from cart collateral
