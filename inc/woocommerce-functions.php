@@ -119,6 +119,11 @@ function get_brand_name($product_id) {
     }
 }
 
+// loop - remove link
+remove_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
+remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 10);
+
+
 // product - remove related products
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 // product - remove additional information tab
