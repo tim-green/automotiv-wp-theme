@@ -220,6 +220,15 @@ $fields['billing']['billing_em_ver'] = array(
 return $fields;
 }
  
+add_action('woocommerce_checkout_process', 'automotiv_matching_email_addresses');
+  
+function automotiv_matching_email_addresses() { 
+    $email1 = $_POST['billing_email'];
+    $email2 = $_POST['billing_em_ver'];
+    if ( $email2 !== $email1 ) {
+        wc_add_notice( 'Your email addresses do not match', 'error' );
+    }
+}
 // checkout - place order button text
 add_filter('woocommerce_order_button_text', 'checkout_place_order_button_text');
 
