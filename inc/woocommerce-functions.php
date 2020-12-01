@@ -136,6 +136,29 @@ add_filter( 'woocommerce_product_tabs', 'remove_product_tabs', 9999 );
 remove_action('woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
 // cart - remove other shipping options if we have $4.50 shipping
 add_filter('woocommerce_package_rates', 'custom_shipping_option', 20, 2 );
+// cart - notices 
+function added_to_cart_message_html($message, $products)
+{
+    $count = 0;
+    $titles = array();
+    foreach ($products as $product_id => $qty) {
+        $titles[] = ($qty > 1 ? absint($qty) . ' &times; ' : '') . sprintf(_x('%s', 'Item name in quotes', 'woocommerce'), strip_tags(get_the_title($product_id)));
+        $count += $qty;
+    }
+
+    $titles     = array_filter($titles);
+    $added_text = sprintf(_n(
+        '%s is added to your cart.', // Singular
+        '%s are added to your cart.', // Plural
+        $count, // Number of products added
+        'woocommerce' // Textdomain
+    ), wc_format_list_of_items($titles));
+    $message    = sprintf('<div class="d-flex justify-content-between"><div class="d-flex"><i class="las la-check-circle text-success h4 mb-0 mr-2"></i> <strong>%s</strong></div> <a href="%s" class="btn btn-primary btn-sm">%s</a></div>', esc_html($added_text), esc_url(wc_get_page_permalink('cart')), esc_html__('View cart', 'woocommerce'));
+
+
+    return $message;
+}
+add_filter('wc_add_to_cart_message_html', 'added_to_cart_message_html', 10, 2);
 // checkout - custom fields
 function custom_woocommerce_form_field($key, $args, $value = null)
 {
