@@ -332,9 +332,9 @@ $theme_version = '1.0.0';
 		register_sidebar( array(
 			'name' => 'Fourth Widget Area (WooCommerce Store)',
 			'id' => 'fourth_widget_area',
-			'before_widget' => '<aside class="woo-side">',
+			'before_widget' => '<aside class="woo-side %2$s">',
 			'after_widget' => '</aside>',
-			'before_title' => '<p class="h6">',
+			'before_title' => '<p class="h5">',
 			'after_title' => '</p>',
 		) );
 	}
