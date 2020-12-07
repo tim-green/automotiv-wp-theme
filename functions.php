@@ -418,8 +418,7 @@ $theme_version = '1.0.1';
 			<li class="post pingback">
 				<p><?php _e( 'Pingback:', 'automotiv' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'automotiv' ), '<span class="edit-link">', '</span>' ); ?></p>
 			<?php
-					break;
-				default :
+				break; default :
 			?>
 			<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 				<article id="comment-<?php comment_ID(); ?>" class="comment">
