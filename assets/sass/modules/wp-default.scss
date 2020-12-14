@@ -161,6 +161,12 @@
    margin: $grid-gutter-width 0 ($grid-gutter-width/2)-gutter-width;
  }
  
+ .comment-form{
+    input{
+      display: revert;
+  }
+ }
+
  .commentlist {
    list-style: none;
    margin: 0 auto;
