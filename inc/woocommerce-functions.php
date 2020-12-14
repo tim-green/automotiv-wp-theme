@@ -29,6 +29,7 @@ if (!function_exists('change_woocommerce_order_number')) {
         return $new_order_id;
     }
 }
+
 // Custom Order status
 // register the status
 function automotiv_wc_register_post_statuses() {
@@ -49,6 +50,7 @@ function automotiv_wc_add_order_statuses( $order_statuses ) {
     return $order_statuses;
     }
 add_filter( 'wc_order_statuses', 'automotiv_wc_add_order_statuses' );
+
 // add custom colour for status
 add_action('admin_head', 'styling_admin_order_list' );
 function styling_admin_order_list() {
@@ -102,6 +104,7 @@ function remove_shop_breadcrumbs(){
  
 }
 
+
 // loop - product title
 remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10);
 add_action('woocommerce_shop_loop_item_title', 'loop_product_title', 10);
@@ -140,6 +143,7 @@ function remove_product_tabs( $tabs ) {
 
 // cart - remove suggestions from cart collateral
 remove_action('woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
+
 // cart - remove other shipping options if we have $4.50 shipping
 add_filter('woocommerce_package_rates', 'custom_shipping_option', 20, 2 );
 // cart - notices 
