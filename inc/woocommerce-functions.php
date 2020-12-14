@@ -132,6 +132,12 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_r
 remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20);
 // product - remove additional information tab
 add_filter( 'woocommerce_product_tabs', 'remove_product_tabs', 9999 );
+  
+function remove_product_tabs( $tabs ) {
+    unset( $tabs['additional_information'] ); 
+    return $tabs;
+}
+
 // cart - remove suggestions from cart collateral
 remove_action('woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
 // cart - remove other shipping options if we have $4.50 shipping
