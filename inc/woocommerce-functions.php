@@ -342,7 +342,7 @@ function action_after_variations_form_callback() {
 
 
 /**
- * Function that shows a message when you've just added a 
+ * Function that shows a message when you have just added a 
  * product to the cart
  */
 add_action('wp_footer','add_to_cart_added_woocommerce');
