@@ -267,7 +267,15 @@ function woocommerce_related_products_args($args)
 add_filter('woocommerce_output_related_products_args', 'woocommerce_related_products_args');/**
  * Function that checks if a product is in the cart already
  * and returns the correct button text
+/**
+ * Add 'woocommerce-active' class to the body tag.
+ *
+ * @param array $classes CSS classes applied to the body tag.
+ * @return array $classes modified to include 'woocommerce-active' class.
  */
+function woocommerce_active_body_class($classes)
+{
+    $classes[] = 'woocommerce-active';
 
 function change_button_text( $product_id, $button_text ) {
     foreach( WC()->cart->get_cart() as $item ) {
@@ -276,7 +284,9 @@ function change_button_text( $product_id, $button_text ) {
         }
     }
     return $button_text;
+    return $classes;
 }
+add_filter('body_class', 'woocommerce_active_body_class');
 
 /**
  * Archive pages: For simple products (ajax add to cart button)
