@@ -26,7 +26,7 @@ defined( 'ABSPATH' ) || exit;
                 class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox form-check-input"
                 <?php checked( apply_filters( 'woocommerce_ship_to_different_address_checked', 'shipping' === get_option( 'woocommerce_ship_to_destination' ) ? 1 : 0 ), 1 ); ?>
                 type="checkbox" name="ship_to_different_address" value="1" />
-            <label class="h4"><?php esc_html_e( 'Ship to a different address?', 'woocommerce' ); ?></label>
+            <label class="h6 m-0 p-0"><?php esc_html_e( 'Ship to a different address?', 'woocommerce' ); ?></label>
         </div>
 
     </div>
