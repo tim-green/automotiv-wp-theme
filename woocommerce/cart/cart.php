@@ -197,7 +197,7 @@ do_action('woocommerce_before_cart');
             </div>
             <div class="row align-items-center">
                 <div class="col-6">
-                    <a href="<?php echo site_url();?>/shop"><i class="las la-arrow-left"></i> Continue shopping</a>
+                    <a href="<?php echo site_url();?>/shop" class="btn btn-primary"><i class="fas fa-chevron-left"></i> Continue shopping</a>
                 </div>
                 <div class="col-6">
 
