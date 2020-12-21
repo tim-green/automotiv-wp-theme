@@ -412,7 +412,7 @@ $theme_version = '1.0.1';
 		 * @since v1.0
 		 */
 		function themes_starter_replace_reply_link_class( $class ) {
-			$output = str_replace( "class='comment-reply-link", "class='comment-reply-link btn btn-outline-secondary", $class );
+			$output = str_replace( "class='comment-reply-link", "class='comment-reply-link btn btn-primary", $class );
 			return $output;
 		}
 		add_filter( 'comment_reply_link', 'themes_starter_replace_reply_link_class' );
@@ -631,6 +631,7 @@ $theme_version = '1.0.1';
 		return $classes;
 	}
 	add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
 	/**
 	 * Loading All CSS Stylesheets and Javascript Files
 	 *
