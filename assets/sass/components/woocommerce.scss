@@ -248,3 +248,87 @@ ul.pwb-row{
             content:" this Notice"
         }
 }
+
+/* Reviews */
+.comment-form{
+
+    textarea{
+        display: flex;
+        padding: .5em;
+        border: 1px solid $gray-400;
+
+        &:focus{
+        color: $gray-700;
+        background-color: $white;
+        border-color: $light-blue;
+        outline: 0;
+        box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25);
+        }
+    }
+
+    label{
+        font-weight: $bold-weight;
+        padding-right: .5em;
+    }
+}
+
+.woocommerce-Reviews{
+
+    .commentlist .avatar{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .commentlist{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-weight: normal !important;
+
+        li.comment{
+            padding: 0;
+        }
+
+    }
+
+    .woocommerce-Reviews-title{
+        @include fontSize(18px);
+        margin: 1em 0;
+    }
+
+    .meta{
+        @include fontSize(16px);
+    }
+
+    .woocommerce-review__author{
+        text-transform: capitalize;
+    }
+
+    .card{
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+    }
+    
+    .card-body{
+        padding-bottom: 0;
+
+        .woocommerce .star-rating span::before {
+            display: none;
+        }
+
+        .star-rating{
+            margin-bottom: 1.2em;
+        }
+    }
+
+    .description{
+        font-weight: normal !important;
+    }
+
+    #review_form_wrapper{
+        margin-top: 2.5em;
+    }
+
+}
