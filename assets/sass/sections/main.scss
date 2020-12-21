@@ -24,4 +24,66 @@
     filter: sepia(30%);
     transition: .5s ease-in-out;
   }
+}}
+
+//Comments for Posts
+
+.comments-title{
+  font-size: 1.3em;
+  text-decoration: underline;
+  padding-bottom: .7em;
 }
+
+.comment-metadata{
+  time{
+    font-weight: normal;
+    text-decoration: underline;
+    margin-bottom: .4em;
+    display: none;
+  }
+
+  margin-top: .8em;
+}
+
+.comment-author{
+  text-transform: capitalize;
+  padding: .6em;
+  background: $royal-blue;
+  color: $white;
+
+  a{
+    color: $white;
+    padding-left: .3em;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.comment-list{
+  padding:0;
+  list-style-type: none;
+
+  .children{
+    margin-top: 1.2em;
+    list-style-type: none;
+    padding: 0 0 0 .8em;
+  }
+}
+
+.comment-body, .form-submit{
+  margin-bottom: 1.5em;
+}
+
+.comment-content{
+  margin-top: 1.5em;
+  font-weight: normal;
+}
+
+
+#cancel-comment-reply-link{
+  font-size: 0.6em;
+  padding-left: 0.8em;
+}
+
+
