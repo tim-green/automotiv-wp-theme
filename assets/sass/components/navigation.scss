@@ -38,6 +38,13 @@
     }
 }
 
+.header .current-menu-item{
+    a{
+        background: $royal-blue;
+        color: $white;
+    }
+}
+
 .nav{
     flex-direction: row;
 }
