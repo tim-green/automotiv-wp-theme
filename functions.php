@@ -105,6 +105,22 @@ $theme_version = '1.0.1';
 	
 	add_action('acf/input/admin_head', 'acf_admin_styles');
 
+
+	/**
+	 * Advanced Custom Fields embed defer loading
+	 * Defer loading of videos
+	 *
+	 * @since v1.1
+	 */
+
+	function defer_video_src_to_data($data, $url, $args) {
+		$data = preg_replace('/(src="([^\"\']+)")/', 'src="" data-src-defer="$2"', $data);
+		return $data;
+	}
+	
+	add_filter('oembed_result', 'defer_video_src_to_data', 99, 3);
+	add_filter('embed_oembed_html', 'defer_video_src_to_data', 99, 3);
+
 	/**
 	 * Add Advanced Custom Fields Option page
 	 *
