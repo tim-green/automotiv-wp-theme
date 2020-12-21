@@ -14,6 +14,7 @@
     // vars
     $title = get_sub_field('video_title');
     $video = get_sub_field('video_link');
+    
     ?>
 
 <div class="col-12 col-md-6 col-lg-6 mb-6">
