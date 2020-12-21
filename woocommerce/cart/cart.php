@@ -190,11 +190,19 @@ do_action('woocommerce_before_cart');
             </div>
             <div class="row pb-4">
                 <div class="col-12">
-                    <p class="mb-1 "><strong>Having trouble with a coupon? Shipping seems to be weird?</strong></p>
-                    <p>Please email us at <a href="mailto:<?php echo $supportEmail; ?>"><?php echo $supportEmail; ?></a> and
-                        we will help!</p>
+
+                    <p class="mb-1 h6 ">
+                        Need Help
+                            <ul class="list-unstyled">
+                            <li>Having trouble with a coupon?</li>
+                            <li>Shipping seems to be weird?</li>
+                            <li>Please email us at <a href="mailto:<?php the_field('support_email','option'); ?>"><?php the_field('support_email','option'); ?></a> and
+                                we will help!</li>
+                        </ul>
+                    </p>
                 </div>
             </div>
+            
             <div class="row align-items-center">
                 <div class="col-6">
                     <a href="<?php echo site_url();?>/shop" class="btn btn-primary"><i class="fas fa-chevron-left"></i> Continue shopping</a>
