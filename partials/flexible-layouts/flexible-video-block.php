@@ -30,6 +30,10 @@
             <?php endif; ?>
         </div>
         
+        <!--  video modal future function -->
+        <?php 
+        //get_template_part('partials/acf-video-modal'); 
+        ?>
     </div>
 
 </div>
