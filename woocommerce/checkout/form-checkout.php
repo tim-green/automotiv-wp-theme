@@ -28,7 +28,7 @@ if (!$checkout->is_registration_enabled() && $checkout->is_registration_required
     return;
 }
 ?>
-<div class="row py-3">
+<div class="row py-3 d-flex">
     <?php do_action('woocommerce_before_checkout_form', $checkout); ?>
 </div>
 <form name="checkout" method="post" class="checkout woocommerce-checkout"
