@@ -7,7 +7,7 @@
 */
 ?>
 <div class="row">
-   <div class="col-8 col-lg-8">
+   <div class="col-12 col-lg-8">
             <?php the_sub_field('content'); ?>
     </div>
 
