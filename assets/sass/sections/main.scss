@@ -5,6 +5,11 @@
 
 */
 
+::selection{
+  background-color: $royal-blue;
+  color: $white;
+}
+
 .main{
   padding: 0 30px;
 }
