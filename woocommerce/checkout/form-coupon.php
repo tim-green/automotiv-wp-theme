@@ -23,12 +23,10 @@ if ( ! wc_coupons_enabled() ) { // @codingStandardsIgnoreLine.
 
 ?>
 
-<div class="col-12 col-lg-6">
-    <div class="border rounded p-2">
 <div class="card mb-5">
     <div class="rounded p-2">
         <div class="woocommerce-form-coupon-toggle">
-            <p class="mb-0">Have a coupon? <a href="#" class="showcoupon">Click here to enter your code</a></p>
+            <p class="mb-0">Have a coupon? <a href="#" class="showcoupon d-none">Click here to enter your code</a></p>
         </div>
 
         <form class="checkout_coupon woocommerce-form-coupon pt-2" method="post" style="display:none">
