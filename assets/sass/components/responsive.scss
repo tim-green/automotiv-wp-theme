@@ -1,3 +1,92 @@
+/*
+
+  Responsive
+  +
+
+*/
+
+@media only screen and (min-width: 990px){
+    .navbar-toggler{
+        display: none;
+    }
+    
+    #auto-menu{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .header .form .input-group-append{
+        .my-2{
+            margin-top: 0 !important;
+        }
+    }
+    .mobile-cart{
+        position: right;
+        margin-top: 5px
+    }
+    
+    .product-type-simple {
+        .img-fluid {
+        margin: 0 !important;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px){
+    .widget_pwb_list_widget{
+        display: block;     
+    }
+
+    .widget_pwb_dropdown_widget{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .nav{
+        flex-direction: column;
+    }
+    .nav-fill > .nav-link, .nav-fill .nav-item{
+        text-align: left;
+        text-indent: 5px
+    }
+    .nav-link i{
+        display: none;
+    }
+
+    .woocommerce-MyAccount-content{
+        margin-top: 2.5em;
+    }
+
+    .widget_pwb_list_widget{
+        display: none;     
+    }
+
+    .woo-side{
+        margin: 1.2em 0 0;
+    }
+
+    .pwb-dropdown-widget{
+        width: 100%;
+    }
+
+    .products{
+        .product-img{
+            text-align: center !important;
+            margin-bottom: .5em;
+            a{
+                width: 100%;
+            }
+        }
+    }
+
+    .product-type-simple{
+        .img-fluid{
+            margin: 5% 0;
+        }
+    }
+
     .commentlist{
         li{
             .card-body{
@@ -5,3 +94,5 @@
             }
         }
     }
+
+}
