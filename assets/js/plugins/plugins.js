@@ -1,4 +1,4 @@
-//var $ = jQuery;
+var $ = jQuery;
 
   jQuery(document).ready(function(){
     jQuery('.home-slider').slick({
@@ -12,3 +12,11 @@
   });
           
 
+  // load defered videos
+	(function($){
+		$(window).load(function(e) {
+			$('[data-src-defer]').each(function(index, element) {
+				$(element).attr('src', $(element).attr('data-src-defer'));
+			});
+		});
+	})(jQuery);
