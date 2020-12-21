@@ -152,6 +152,17 @@ ul.pwb-row{
         }
     }
 }
+
+
+/*My Cart*/
+.cart {
+    .product-thumbnail {
+        .size-woocommerce_thumbnail {
+            width: 100px;
+            height: auto;
+        }
+    }
+
 .woocommerce-shipping-totals {
     small {
         font-size: 12px;
