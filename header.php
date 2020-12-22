@@ -73,6 +73,25 @@
                 
             ));
         ?>
+    <!-- Nav -->
+    <div class="nav-wrapper bg-primary  d-lg-block border-top">
+        <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#auto-menu" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="auto-menu">
+            <?php wp_nav_menu(
+                array(
+                    'container' => 'ul',
+                    'theme_location' => 'main-menu',
+                    'depth' => 2,
+                    'menu_class' => 'nav nav-fill justify-content-between',
+                    'walker'          => new WP_Bootstrap_Navwalker(),
+                    
+                ));
+            ?>
+    </div>
         </div>
     </div>
     </header><!-- #masthead -->
