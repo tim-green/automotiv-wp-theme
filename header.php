@@ -70,6 +70,11 @@
                 'depth' => 2,
                 'menu_class' => 'nav nav-fill justify-content-between',
                 'walker'          => new WP_Bootstrap_Navwalker(),
+                        <a class="d-block mb-2" href="<?php echo site_url(); ?>">
+                            <?php if ($logo) : ?>
+                            <img src="<?php echo $logo['url'] ?>" class="img-fluid"
+                                alt="<?php echo $logo['alt'] ?>"></a>
+                        <?php endif; ?>
                                 <div id="custom-mini-cart" class="dropdown-menu dropdown-menu-right"
                                     aria-labelledby="dropdown-mini-cart">
                                     <?php woocommerce_mini_cart(); ?>
