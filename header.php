@@ -70,6 +70,10 @@
                 'depth' => 2,
                 'menu_class' => 'nav nav-fill justify-content-between',
                 'walker'          => new WP_Bootstrap_Navwalker(),
+                                <div id="custom-mini-cart" class="dropdown-menu dropdown-menu-right"
+                                    aria-labelledby="dropdown-mini-cart">
+                                    <?php woocommerce_mini_cart(); ?>
+                                </div>
                 
             ));
         ?>
