@@ -224,6 +224,15 @@ ul.pwb-row{
     transition: max-height .5s;
     padding-left: 5px;
 }
+.woocommerce-checkout {
+    .woocommerce-error {
+        @extend .alert;
+        @extend .alert-danger;
+    }
+     input{
+        display: revert;
+    }
+}
 .shop_table{
     margin-top: 1.5em;
     thead{
