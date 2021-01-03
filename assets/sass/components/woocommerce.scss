@@ -272,6 +272,19 @@ ul.pwb-row{
         background: $white;
         color: $royal-blue;
     }
+/*Store Demo Styling*/
+.woocommerce-store-notice{
+    background: $primary;
+    color: $white;
+    padding:.5rem !important;
+    text-align: center;
+    @include fontSize(16px);
+
+    position: absolute;
+    top:0;
+    width: 100%;
+}
+
 .woocommerce-store-notice__dismiss-link{
         color: $white;
         background: $royal-blue;
