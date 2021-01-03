@@ -127,7 +127,20 @@ remove_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_pr
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 10);
 
 
+// loop - product image
 remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+add_action('woocommerce_before_shop_loop_item_title', 'loop_product_image', 10);
+
+function loop_product_image()
+{
+    global $post, $woocommerce;
+    if ( has_post_thumbnail() ) {
+        echo '<a href="' . get_the_permalink() . '">' .  woocommerce_get_product_thumbnail() . '</a>';
+    } else {
+        echo '<img class="img-fluid" src="' . get_template_directory_uri() . '/assets/images/woocommerce-placeholder.png">';
+    }
+}
+
 // product - remove related products
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
