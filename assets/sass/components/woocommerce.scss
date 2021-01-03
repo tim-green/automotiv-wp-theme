@@ -186,6 +186,18 @@ ul.pwb-row{
     }
 }
 
+
+// mini cart
+
+.woocommerce-mini-cart {
+    .woocommerce-mini-cart-item {
+        .size-woocommerce_thumbnail {
+            width: 50px;
+            height: auto;
+        }
+    }
+}
+
 .woocommerce-mini-cart__empty-message{
     margin-bottom: 0;
 }
