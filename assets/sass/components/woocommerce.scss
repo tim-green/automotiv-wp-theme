@@ -289,6 +289,12 @@ ul.pwb-row{
     }
    
 }
+.woocommerce-MyAccount-navigation {
+    .list-group-item.is-active {
+        @extend .list-group-item, .active;
+    }
+}
+
     .alert-info{
         border-color: $royal-blue;
         background: $white;
