@@ -334,6 +334,10 @@ ul.pwb-row{
         height: auto;
     }
 
+    .img-fluid:hover{
+        filter: sepia(0%);
+    }
+
 /* rating block specific to review submit form */
 .woocommerce p.stars {
     position: relative;
