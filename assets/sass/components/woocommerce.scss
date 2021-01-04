@@ -289,17 +289,35 @@ ul.pwb-row{
     }
    
 }
+/* My Account*/
 .woocommerce-MyAccount-navigation {
     .list-group-item.is-active {
         @extend .list-group-item, .active;
     }
 }
 
+.woocommerce-MyAccount-content{
+
     .alert-info{
         border-color: $royal-blue;
         background: $white;
         color: $royal-blue;
     }
+
+    .order-number, .order-date, .order-status{
+        background: $royal-blue;
+        color: $white;
+        border-radius: .25rem;
+        transition: .2s ease-out;
+
+        &:hover{
+            background: $white;
+            color: $royal-blue;
+            transition:  .2s ease-in;
+        }
+
+    }
+}
 /*Store Demo Styling*/
 .woocommerce-store-notice{
     background: $primary;
