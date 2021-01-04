@@ -274,6 +274,11 @@ ul.pwb-row{
         display: revert;
     }
 }
+
+.wc_payment_method input{
+    display: none;
+}
+
 .quantity {
     width: 60px;
 }
