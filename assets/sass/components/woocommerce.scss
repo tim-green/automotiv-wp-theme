@@ -329,6 +329,11 @@ ul.pwb-row{
 
     }
 }
+    img.wp-post-image {
+        max-width: 100%;
+        height: auto;
+    }
+
 /* rating block specific to review submit form */
 .woocommerce p.stars {
     position: relative;
