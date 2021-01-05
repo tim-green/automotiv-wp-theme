@@ -347,6 +347,12 @@ ul.pwb-row{
         background: $royal-blue;
         color: $white;
     }
+    #tab-pwb_tab{
+        #tab-pwb_tab-content h3{
+            @include fontSize(18px);
+            font-weight: normal;
+            margin-top: .6em;
+        }
 }
 /* rating block specific to review submit form */
 .woocommerce p.stars {
