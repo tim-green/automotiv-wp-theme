@@ -343,6 +343,10 @@ ul.pwb-row{
     .woocommerce-product-rating{
         margin: 1.5em 0 .9em;
     }
+    .nav-tabs .nav-link.active{
+        background: $royal-blue;
+        color: $white;
+    }
 }
 /* rating block specific to review submit form */
 .woocommerce p.stars {
