@@ -393,6 +393,11 @@ ul.pwb-row{
 .entry-summary{
     .pwb-single-product-brands{
         padding-top: 0;
+
+        &:before{
+            content: 'Brand: ';
+            font-weight: 700;
+        }
     }
 }
 }
