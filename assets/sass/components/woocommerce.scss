@@ -373,6 +373,23 @@ ul.pwb-row{
         right: 10px;
     }
 }
+.woocommerce-notices-wrapper {
+    width: 100%;
+    margin-top: 1.5em;
+
+    .alert-success{
+        background: $white;
+        border: $royal-blue 1px solid;
+        color: $royal-blue;
+    }
+
+    .woocommerce-message{
+        strong{
+            padding-right: .2em;
+        }
+    }
+}
+
 }
 /* rating block specific to review submit form */
 .woocommerce p.stars {
