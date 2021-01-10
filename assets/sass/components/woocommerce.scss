@@ -410,6 +410,15 @@ ul.pwb-row{
     position: absolute;
     color: $royal-blue;
 }
+.woocommerce .star-rating span:before {
+    content: '\f005\f005\f005\f005\f005';
+    top: 0;
+    position: absolute;
+    left: 0;
+    color: $primary;
+    font-family: $fa-pro;
+    font-weight: 900;
+}
 .entry-summary{
     .pwb-single-product-brands{
         padding-top: 0;
