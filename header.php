@@ -75,10 +75,24 @@
                             <img src="<?php echo $logo['url'] ?>" class="img-fluid"
                                 alt="<?php echo $logo['alt'] ?>"></a>
                         <?php endif; ?>
+                    <div class="col-lg-4 col-sm-4 col-8 text-right mobile-cart">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <!-- cart dropdown -->
+                            <div id="cart-dropdown" class="dropdown w-50">
+                                <a class="dropdown-toggle" role="button" id="dropdown-mini-cart" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" href="#">
+                                    Cart
+                                    <span id="cart-customlocation"
+                                        class="badge badge-light"><?php echo  $woocommerce->cart->cart_contents_count; ?>
+                                </a>
+
                                 <div id="custom-mini-cart" class="dropdown-menu dropdown-menu-right"
                                     aria-labelledby="dropdown-mini-cart">
                                     <?php woocommerce_mini_cart(); ?>
                                 </div>
+                            </div>
+
+                        </div>
                 
             ));
         ?>
