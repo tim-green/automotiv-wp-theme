@@ -22,6 +22,7 @@ if (! is_ajax() ) {
 }
 ?>
 <div id="payment" class="woocommerce-checkout-payment pt-3">
+    <span class="h5 py-3 mb-3 d-flex p-b-5 title-border">Select payment option</span>
     <?php if (WC()->cart->needs_payment() ) : ?>
         <ul class="wc_payment_methods payment_methods methods list-unstyled">
         <?php
