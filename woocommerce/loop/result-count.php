@@ -26,7 +26,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="row py-3">
         <div class="col-6">
             <?php if (is_search() || is_product_category()) : ?>
-            <a href="<?php echo site_url(); ?>/shop"><i class="las la-arrow-left"></i> Back to all products</a>
+    
+            <a class="btn btn-outline-primary" href="<?php echo site_url(); ?>/shop"><i class="fas fa-chevron-left"></i> Back to all products</a>
             <?php else : 
             endif; ?>
         </div>
