@@ -523,6 +523,12 @@ ul.pwb-row{
 .woocommerce p.stars a.star-5:hover:after {
     content: '\f005\f005\f005\f005\f005';
 }
+/* rating block specific to product listing */
+.woocommerce ul.products li.product .star-rating {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
 /*Store Demo Styling*/
 .woocommerce-store-notice{
     background: $primary;
