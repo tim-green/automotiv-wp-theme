@@ -20,3 +20,22 @@ var $ = jQuery;
 			});
 		});
 	})(jQuery);
+
+
+// Mapbox
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ3JvdW5kY3RybCIsImEiOiJjanhvb2FuczkwOTBxM2RwOWR2M2dzcTBvIn0.4OIjhU9J4sQVJGkNIF1eVg';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [133.77, -25.27], // starting position
+zoom: 3
+});
+
+
+map.addControl(
+  new MapboxDirections({
+  accessToken: mapboxgl.accessToken
+  }),
+  'top-left'
+  );
