@@ -21,7 +21,7 @@ get_header();
             <div class="col-12">
                 <div class="home-ymm">
                     <p class="mb-0 text-center"><a class="btn-lg btn btn-primary"
-                            href="<?php echo site_url(); ?>/shop#ymm-bar">Choose your Vehicle</a></p>
+                            href="<?php echo site_url(); ?>/shop">Choose your Parts</a></p>
                 </div>
             </div>
         </div>
