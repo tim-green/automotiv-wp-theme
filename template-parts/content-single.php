@@ -6,6 +6,9 @@
  *
  * @package automotiv
  */
+?>
 
- the_content();
+<div class="post-content">
+    <?php the_content(); ?>
+</div>
 
