@@ -62,19 +62,35 @@
                                 'add_li_class' => 'border-right pr-2 mr-2'
                             ));
                         ?>
-        <div class="container">
-        <?php wp_nav_menu(
-            array(
-                'container' => 'ul',
-                'theme_location' => 'main-menu',
-                'depth' => 2,
-                'menu_class' => 'nav nav-fill justify-content-between',
-                'walker'          => new WP_Bootstrap_Navwalker(),
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+
+                <!-- main header -->
+                <div class="row align-items-center py-3">
+                    <div class="col-12 col-lg-3 text-center text-lg-left brand-logo">
                         <a class="d-block mb-2" href="<?php echo site_url(); ?>">
                             <?php if ($logo) : ?>
                             <img src="<?php echo $logo['url'] ?>" class="img-fluid"
                                 alt="<?php echo $logo['alt'] ?>"></a>
                         <?php endif; ?>
+                    </div>
+                    <div class="col-lg-5 col-12 col-sm-8  d-lg-block">
+                        <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" class="form">
+                            <div class="input-group">
+                                <input class="form-control" type="search"
+                                    placeholder="Search by Keyword, Part Number..." aria-label="Search" name="s"
+                                    id="search" data-swplive="true" value="<?php the_search_query(); ?>">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                                </div>
+                            </div>
+                            <input type="hidden" name="post_type" value="products" />
+                        </form>
+                    </div>
                     <div class="col-lg-4 col-sm-4 col-8 text-right mobile-cart">
                         <div class="d-flex align-items-center justify-content-end">
                             <!-- cart dropdown -->
@@ -93,9 +109,12 @@
                             </div>
 
                         </div>
+                    </div>
+                </div>
                 
-            ));
-        ?>
+                </div>
+
+    
     <!-- Nav -->
     <div class="nav-wrapper bg-primary  d-lg-block border-top">
         <div class="container">
