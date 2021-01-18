@@ -10,19 +10,25 @@
 get_header();
 ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
+	<div id="primary" class="content-area article-single">
+    <main id="main" class="site-main">
+        <div class="jumbotron jumbotron-fluid"
+            style="background-image: url(<?php the_post_thumbnail_url('full'); ?>); background-position: center center; background-size: cover; position: relative">
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
+            <div class="container">
+                <h1 class="display-4 text-white font-weight-bold">
+				<?php
 					/* translators: %s: search query. */
 					printf( esc_html__( 'Search Results for: %s', 'automotiv' ), '<span>' . get_search_query() . '</span>' );
-					?>
-				</h1>
-			</header><!-- .page-header -->
+					?>		
+			</h1>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container">
+		<?php if ( have_posts() ) : ?>
 
 			<?php
 			/* Start the Loop */
@@ -40,16 +46,23 @@ get_header();
 
 			the_posts_navigation();
 
-		else :
+			else :
 
 			get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
+			endif;
+			?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+
+        </div>
+
+
+
+    </main><!-- #main -->
+</div><!-- #primary -->
+
+
+
 
 <?php
-get_sidebar();
 get_footer(); ?>
