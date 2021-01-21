@@ -342,6 +342,14 @@ ul.pwb-row{
     .woocommerce-product-rating{
         margin: 1.5em 0 .9em;
     }
+    .bundled_product_summary {
+        display: flex;
+        .bundled_product_images {
+            width: auto;
+            img {
+                max-width: 100px;
+            }
+        }
     .onsale {
         position: absolute;
         padding: .3em;
