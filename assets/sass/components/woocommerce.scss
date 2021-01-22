@@ -440,6 +440,14 @@ ul.pwb-row{
     position: absolute;
     color: $royal-blue;
 }
+.woocommerce .star-rating span {
+    overflow: hidden;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 1.5em;
+}
 .woocommerce .star-rating span:before {
     content: '\f005\f005\f005\f005\f005';
     top: 0;
