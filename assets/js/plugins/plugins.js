@@ -32,10 +32,5 @@ center: [133.77, -25.27], // starting position
 zoom: 3
 });
 
-
-map.addControl(
-  new MapboxDirections({
-  accessToken: mapboxgl.accessToken
-  }),
-  'top-left'
-  );
+map.addControl(new mapboxgl.NavigationControl());
+map.addControl(new MapboxDirections({ accessToken: mapboxgl.accessToken}),'top-left');
