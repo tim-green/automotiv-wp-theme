@@ -1,6 +1,6 @@
 <?php
 
-$theme_version = '1.0.2';
+$theme_version = '1.0.4';
 
 	/**
 	 * Include WooCommerce Functions
