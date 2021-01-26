@@ -113,6 +113,20 @@
   height: 40px;
 }
 
+.mapbox-directions-origin{
+  .mapbox-form-label{
+  background-color: $royal-blue !important;
+  color: $white !important;
+}
+}
+
+.mapbox-directions-destination{
+    .mapbox-form-label{
+    background-color: darken($royal-blue, 8%) !important;
+    color: $white !important;
+  }
+}
+
 // Responsive embeds
 .embed-container { 
   position: relative; 
