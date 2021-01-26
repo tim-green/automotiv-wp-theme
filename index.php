@@ -27,6 +27,9 @@ get_header();
     </div>
 </div>
 
+<div class="container">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
 
             <?php
 			$args = array(
