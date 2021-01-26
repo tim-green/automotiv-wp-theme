@@ -36,6 +36,10 @@
             transition: ease-in-out .4s;
         }
     }
+
+    .current_page_item a{
+        background: darken($color-primary, 8%);
+    }
 }
 
 .header .current-menu-item{
