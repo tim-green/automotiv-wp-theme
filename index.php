@@ -28,6 +28,15 @@ get_header();
 </div>
 
 
+            <?php
+			$args = array(
+				'posts_per_page' => 6, // How many items to display
+				'no_found_rows'  => true, // We don't ned pagination so this speeds up the query
+			);
+			$cats = get_terms( array(
+				'taxonomy' => 'category',
+				'hide_empty' => true,
+			) );
 
 
 <?php
