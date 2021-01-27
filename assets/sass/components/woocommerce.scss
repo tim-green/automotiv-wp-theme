@@ -566,6 +566,17 @@ ul.pwb-row{
     text-align: center;
     margin: 0 auto;
 }
+/* rating block specific to sidebar widgets */
+.woocommerce ul.cart_list li .star-rating,
+.woocommerce ul.product_list_widget li .star-rating {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+/* end of review stars */
+
+
+
 /*Store Demo Styling*/
 .woocommerce-store-notice{
     background: $primary;
