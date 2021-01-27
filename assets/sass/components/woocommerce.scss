@@ -432,6 +432,12 @@ ul.pwb-row{
     -webkit-font-smoothing: antialiased;
     font-size: 1em;
 }
+.woocommerce .star-rating {
+    overflow: hidden;
+    position: relative;
+    height: 1em;
+    width: 5em;
+}
 .woocommerce .star-rating:before {
     content: '\f005\f005\f005\f005\f005';
     float: left;
