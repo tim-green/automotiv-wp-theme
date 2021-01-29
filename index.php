@@ -41,6 +41,29 @@ get_header();
 				'hide_empty' => true,
 			) );
 
+			$cats_ids = array();  
+			foreach( $cats as $cat ) {
+
+				$args['category__in'] = $cat;
+				$loop = new WP_Query( $args );
+			
+				if ( $loop->have_posts() ) {
+					echo '<h3 class="py-3 mb-3 title-border">' . $cat->name . '</h3>';
+					echo '<div class="row row-cols-1 row-cols-md-3 pb-3">';
+					while ( $loop->have_posts() ) : $loop->the_post();
+						get_template_part( 'template-parts/content', get_post_type() );
+					endwhile;
+					echo '</div>';
+					echo '<a class="text-right d-block" href="' . site_url() . '\category/' . $cat->slug . '">Browse all ' . $cat->name . ' articles <i class="las la-arrow-right"></i></a>';
+				}
+				wp_reset_postdata();
+				}
+			?>
+
+        </main><!-- #main -->
+    </div><!-- #primary -->
+</div>
+
 
 <?php
 get_footer();?>
