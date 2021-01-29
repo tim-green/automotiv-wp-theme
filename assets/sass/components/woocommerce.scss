@@ -266,6 +266,9 @@ ul.pwb-row{
         }
     }
 }
+
+/*Checkout*/ 
+
 .woocommerce-checkout {
     .woocommerce-error {
         @extend .alert;
@@ -344,6 +347,7 @@ ul.pwb-row{
     .woocommerce-product-rating{
         margin: 1.5em 0 .9em;
     }
+
     .bundled_product_summary {
         display: flex;
         .bundled_product_images {
@@ -463,6 +467,13 @@ ul.pwb-row{
     font-family: $fa-pro;
     font-weight: 900;
 }
+
+/* rating block specific to single product summary area */
+
+.product_meta{
+    
+}
+
 .entry-summary{
     .pwb-single-product-brands{
         padding-top: 0;
@@ -473,6 +484,21 @@ ul.pwb-row{
         }
     }
 }
+
+.woocommerce .woocommerce-product-rating {
+    display: block;
+    width: 100%;
+}
+.woocommerce .woocommerce-product-rating .star-rating {
+    margin: 0 auto;
+    float: left;
+    font-size: 1em;
+}
+.woocommerce .woocommerce-product-rating .woocommerce-review-link {
+    font-size: 85%;
+    width: 100%;
+    margin: 0.5em 0;
+    float: left;
 }
 /* rating block specific to review submit form */
 .woocommerce p.stars {
