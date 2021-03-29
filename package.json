@@ -15,7 +15,7 @@
   "dependencies": {
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-sass": "^2.0.0",
-    "livereload": "^0.9.1"
+    "livereload": "^0.9.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
