@@ -59,11 +59,11 @@ ul.pwb-row{
        
        a{ 
            color: $black;
-
+           transition: ease-out 1.2s;
            &:hover{
             text-decoration: none ;
-            color: $secondary;
-            transition: ease-in 3s;
+            color: $royal-blue;
+            transition: ease-in .7ms;
         }
        }
 
