@@ -5,6 +5,12 @@
 
 */
 
+.woocommerce{
+    img{
+        border-radius: $default-border-radius;
+    }
+}
+
 /* The Shop */
 .products {
     .size-woocommerce_thumbnail {

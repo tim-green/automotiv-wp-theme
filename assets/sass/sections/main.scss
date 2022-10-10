@@ -18,12 +18,16 @@
   color: $white;
 }
 
+img{
+  border-radius: $default-border-radius;
+}
 .img-fluid{
   transition: .5s ease-in;
     &:hover{
     filter: sepia(30%);
     transition: .5s ease-in-out;
   }
+  border-radius: $default-border-radius;
 }
 
 //Comments for Posts
@@ -50,6 +54,7 @@
   padding: .6em;
   background: $royal-blue;
   color: $white;
+  border-radius:$default-border-radius;
 
   a{
     color: $white;
@@ -90,6 +95,7 @@
 #map{
   width: 100%;
   height: 500px;
+  border-radius: $default-border-radius;
 }
 
 .mapbox-directions-component{
