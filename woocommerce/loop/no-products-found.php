@@ -52,17 +52,15 @@ defined( 'ABSPATH' ) || exit;
 
 
     <?php else : ?>
-    <h2 class="pb-3">Sorry, no results were found for "<?php echo get_search_query(); ?>"</h2>
+    <h2 class="pb-3">Sorry, no results were found</h2>
     <div class="row">
         <div class="col-12 col-lg-8">
             <?php if (isset($vehicle)) : ?>
             <div class="pb-3">
                 No "<span class="font-weight-bold"><?php echo get_search_query(); ?></span>" product were found.
+                
             </div>
             <?php endif; ?>
-
-        </div>
-        <div class="col-12 col-lg-4">
             <p class="font-weight-bold">Search Tips</p>
             <ul>
                 <li>Check for typos or spelling errors</li>
@@ -71,6 +69,9 @@ defined( 'ABSPATH' ) || exit;
                 <li>Still cant find what your looking for? <a href="/contact">Contact us for more help</a></li>
             </ul>
         </div>
+        <!-- <div class="col-12 col-lg-4">
+            
+        </div> -->
     </div>
     <?php endif; ?>
 </div>
