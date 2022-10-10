@@ -16,6 +16,7 @@
     .size-woocommerce_thumbnail {
         max-width: 100%;
         height: auto;
+        
     }
 
     .added_to_cart {
@@ -118,12 +119,17 @@ ul.pwb-row{
                 
             }
         }
-    
+        
         .count::before{
             content:"";
             padding-right: 0;
         }
     }
+}
+
+.current-cat{
+    background: $light;
+    font-weight: bold;
 }
 
 .search-no-results {
