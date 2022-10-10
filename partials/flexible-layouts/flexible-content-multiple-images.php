@@ -17,7 +17,7 @@
             while ( have_rows('images') ) : the_row();
         ?>
 
-        <img class="img-fluid pb-4" src="<?php the_sub_field('image'); ?>">   
+        <img class="img-fluid mb-4" src="<?php the_sub_field('image'); ?>">   
         <?php
             endwhile;
             else : endif;
