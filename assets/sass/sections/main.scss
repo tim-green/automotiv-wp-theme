@@ -63,6 +63,14 @@ img{
       text-decoration: underline;
     }
   }
+
+  .avatar{
+    border-radius: 150px;
+    &:hover{
+      filter: sepia(30%);
+      transition: ease-in-out .8s;
+    }
+  }
 }
 
 .comment-list{
