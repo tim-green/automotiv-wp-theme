@@ -32,13 +32,14 @@
         transition: ease-out .4s;
 
         &:hover{
-            background: darken($color-primary, 8%);
+            background: $color-primary;
             transition: ease-in-out .4s;
         }
     }
 
     .current_page_item a{
-        background: darken($color-primary, 8%);
+        background: $color-primary;
+        
     }
 }
 
