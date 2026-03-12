@@ -7,9 +7,9 @@
  * @package automotiv
  */
 
-get_header();
-$post_date = get_the_date( 'F j, Y' );
-$categories = get_the_category();
+	get_header();
+	$post_date = get_the_date( 'F j, Y' );
+	$categories = get_the_category();
 ?>
 
 <div id="primary" class="content-area article-single">

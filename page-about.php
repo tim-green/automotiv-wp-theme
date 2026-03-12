@@ -15,13 +15,12 @@ get_header();
     <div class="row">
         <div class="col-12 col-lg-12">
             <?php
-		while ( have_posts() ) :
-			the_post();
+                while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', 'page' );
+                get_template_part( 'template-parts/content', 'page' );
 
-		endwhile; // End of the loop.
-		?>
+                endwhile; // End of the loop.
+		    ?>
         </div>
     </div>
 </div>

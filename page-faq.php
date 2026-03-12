@@ -8,7 +8,7 @@
  * @package automotiv
  */
 
-get_header();
+    get_header();
 ?>
 <div class="container">
     <h1 class="py-3 mb-3 title-border"><?php the_title(); ?></h1>
@@ -18,14 +18,8 @@ get_header();
             get_template_part('partials/acf-faq');            
         ?>
             <?php the_content();?>
-
-        
         </div>
     </div>
 </div>
 
-
-
-
-<?php
-get_footer(); ?>
+<?php get_footer(); ?>
