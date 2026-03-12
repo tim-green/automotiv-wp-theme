@@ -4,27 +4,16 @@
 
 */
 
-
-/*
-
- ==== Bootstrap Import ====
-
-*/
-
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
 /*
 
  ==== modules ====
 
 */
-
-
-@import "modules/mixins";
-@import "modules/variables";
-@import "modules/wp-default";
-@import "modules/base";
-@import "modules/typography";
+@use "modules/variables";
+@use "modules/wp-default";
+@use "modules/mixins";
+@use "modules/base";
+@use "modules/typography";
 
 /*
 
@@ -32,7 +21,7 @@
 
 */
 
-@import "plugins/slick";
+@use "plugins/slick";
 
 /*
 
@@ -40,11 +29,11 @@
 
 */
 
-@import "sections/header";
-@import "sections/main";
-@import "sections/articles";
-@import "sections/sidebar";
-@import "sections/footer";
+@use "sections/header";
+@use "sections/main";
+@use "sections/articles";
+@use "sections/sidebar";
+@use "sections/footer";
 
 
 /*
@@ -53,13 +42,13 @@
 
 */
 
-@import "components/navigation";
-@import "components/card";
-@import "components/forms";
-@import "components/accordion";
-@import "components/woocommerce-blocks";
-@import "components/woocommerce";
-@import "components/responsive";
+@use "components/navigation";
+@use "components/card";
+@use "components/forms";
+@use "components/accordion";
+@use "components/woocommerce-blocks";
+@use "components/woocommerce";
+@use "components/responsive";
 
 /*
 

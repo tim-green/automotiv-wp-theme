@@ -4,7 +4,7 @@
   +
 
 */
-
+@use '../modules/variables' as *;
 ::selection{
   background-color: $royal-blue;
   color: $white;

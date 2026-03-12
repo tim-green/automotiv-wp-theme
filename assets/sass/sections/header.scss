@@ -4,6 +4,8 @@
   +
 
 */
+@use '../modules/variables' as *;
+@use '../modules/mixins' as *;
 
 .top-bar{
   span{

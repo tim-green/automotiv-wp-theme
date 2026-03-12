@@ -4,6 +4,9 @@
   +
 
 */
+@use '../modules/variables' as *;
+@use '../modules/mixins' as *;
+@use 'sass:color';
 
 .woocommerce{
     img{

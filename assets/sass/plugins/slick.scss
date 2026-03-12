@@ -4,6 +4,9 @@
   +
 
 */
+@use '../modules/variables' as *;
+@use 'sass:meta';
+@use "sass:math";
 
 // Slick CSS
 .slick-slider {
