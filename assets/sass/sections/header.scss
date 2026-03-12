@@ -35,9 +35,9 @@
       background-position: center center;
       background-size: cover;
 
-      @include media-breakpoint-up(xl) {
-          height: 470px;
-      }
+      // @include media-breakpoint-up(xl) {
+      //     height: 470px;
+      // }
 
       h2 {
           font-weight: bold;

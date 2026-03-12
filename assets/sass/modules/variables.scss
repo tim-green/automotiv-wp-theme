@@ -10,7 +10,7 @@
  */
 
 // Bootstrap 4 Customization options: https://getbootstrap.com/docs/4.0/getting-started/theming/#sass-options
-/*
+
 // Options
 $enable-rounded:            true !default;
 $enable-shadows:            false !default;
@@ -19,19 +19,20 @@ $enable-transitions:        true !default;
 $enable-hover-media-query:  false !default;
 $enable-grid-classes:       true !default;
 $enable-print-styles:       true !default;
-
+$grid-gutter-width: 0px;
+$link-hover-color: inherit;
 $spacer:                    1rem !default;
 
 // Grayscale vars
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+// $gray-100: #f8f9fa !default;
+// $gray-200: #e9ecef !default;
+// $gray-300: #dee2e6 !default;
+// $gray-400: #ced4da !default;
+// $gray-500: #adb5bd !default;
+// $gray-600: #868e96 !default;
+// $gray-700: #495057 !default;
+// $gray-800: #343a40 !default;
+// $gray-900: #212529 !default;
 
 // Color vars
 $blue:    #007bff !default;
@@ -50,7 +51,7 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
-*/
+$font-weight-bold: bold;
 
 
 
@@ -78,7 +79,8 @@ $red: #dc3545 !default;
 
 //Blue
 $royal-blue: #007bff;
-$blue: #617a7c;
+$blue: #007bff;
+// $blue: #617a7c;
 $light-blue: #80bdff;
 $cyan: #17a2b8 !default;
 

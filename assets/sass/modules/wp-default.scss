@@ -135,7 +135,6 @@
  
  .sticky {
    .card {
-     background-color: $gray-100;
    }
  }
  
@@ -210,13 +209,13 @@
   * Responsive Design using
   */
  
- @media (max-width: breakpoint-max(sm)) {
+//  @media (max-width: breakpoint-max(sm)) {
    
-   #sidebar {
-     margin-top: 60px;
-   }
+//    #sidebar {
+//      margin-top: 60px;
+//    }
    
- }
+//  }
 
  .is-loading {
   z-index: 9999;
