@@ -1,4 +1,4 @@
-console.log('vendor js');
+// console.log('vendor js');
 
 /*! @license ScrollReveal v4.0.6
 
