@@ -10,7 +10,9 @@
     "url": "https://github.com/tim-green/framework-wp.git"
   },
   "scripts": {
-    "watch": "grunt watch"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel watch assets/js/app.js assets/sass/app.scss --dist-dir ./build",
+    "build": "parcel build assets/js/app.js assets/sass/app.scss --dist-dir ./build --no-source-maps"
   },
   "dependencies": {
     "grunt-contrib-clean": "^2.0.0",
@@ -32,6 +34,8 @@
     "jquery": ">=3.6.0",
     "load-grunt-tasks": "^5.1.0",
     "node-sass": "^7.0.1",
+    "parcel": "^2.15.4",
+    "@parcel/transformer-sass": "^2.15.4",
     "pixrem": "^5.0.0",
     "popper.js": "^1.16.1",
     "postcss": "^8.4.5"
