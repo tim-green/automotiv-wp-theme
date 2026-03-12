@@ -11,11 +11,11 @@ gform_wrapper form {
 }
 
 .gform_wrapper ul {
-  @extend .list-unstyled;
+  @extend .list-unstyled !optional;
 }
 
 .gform_wrapper li {
-  @extend .form-group;
+  @extend .form-group !optional;
 }
 
 .gform_wrapper .gfield_required {
@@ -38,29 +38,29 @@ gform_wrapper form {
 .gform_wrapper input[type='url'],
 .gform_wrapper select,
 .gform_wrapper textarea {
-  @extend .form-control;
+  @extend .form-control !optional;
 }
 
 .gform_wrapper .button {
-  @extend .btn;
-  @extend .btn-primary;
+  @extend .btn !optional;
+  @extend .btn-primary !optional;
 }
 
 .gform_wrapper .gfield_error {
   .gfield_label {
-      @extend .alert-danger;
+      @extend .alert-danger !optional;
   }
 
   input,
   select,
   textarea {
-      @extend .alert-danger;
+      @extend .alert-danger !optional;
   }
 }
 
 .validation_error {
-  @extend .alert;
-  @extend .alert-danger;
+  @extend .alert !optional;
+  @extend .alert-danger !optional;
 }
 
 .validation_message {
@@ -68,6 +68,6 @@ gform_wrapper form {
 }
 
 .gform_confirmation_message {
-  @extend .alert;
-  @extend .alert-success;
+  @extend .alert !optional;
+  @extend .alert-success !optional;
 }

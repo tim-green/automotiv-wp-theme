@@ -31,7 +31,7 @@
         &:before {
             margin-right: 5px;
             content: '';
-            @extend .spinner-border;
+            @extend .spinner-border !optional;
             height: 18px;
             width: 18px;
             border-width: 0.2em;
@@ -225,11 +225,12 @@ ul.pwb-row{
         transition: border ease-out .5s;
         width: 100%;
         color: $white;
-        border: 1px solid darken($color-primary, 18%);
+        border: 1px solid color.scale($color-primary, $lightness: -36%);
+        
 
         &:hover{
             transition: border ease-in .5s;
-            border: 1px solid lighten($color-primary, 10%);
+            border: 1px solid color.scale($color-primary, $lightness: 10%);
         }
     }
 }
@@ -275,7 +276,7 @@ ul.pwb-row{
             margin-bottom: 1rem;
 
             .wc-braintree-hosted-field {
-                @extend .form-control;
+                @extend .form-control !optional;
                 height: calc(1.5em + 0.75rem + 2px) !important;
             }
         }
@@ -286,8 +287,8 @@ ul.pwb-row{
 
 .woocommerce-checkout {
     .woocommerce-error {
-        @extend .alert;
-        @extend .alert-danger;
+        @extend .alert !optional;
+        @extend .alert-danger !optional;
     }
      input{
         display: revert;
@@ -322,7 +323,7 @@ ul.pwb-row{
 /* My Account*/
 .woocommerce-MyAccount-navigation {
     .list-group-item.is-active {
-        @extend .list-group-item, .active;
+        @extend .list-group-item, .active  !optional;
     }
 }
 
