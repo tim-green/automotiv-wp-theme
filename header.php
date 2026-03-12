@@ -17,11 +17,26 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-  
-    <?php wp_head(); 
-    global $woocommerce;
-    
-    $logo = get_field('logo', 'option');
+    <?php wp_head();?>
+      <style>
+        .woocommerce-store-notice{
+            display: none !important;
+        }
+        #cart-dropdown{
+            background: #007bff;
+            color: #fff !important;
+            padding: 6px;
+            border-radius: 6px;
+            width: auto !important;
+        }
+        #dropdown-mini-cart{
+            color: #fff !important;
+        }
+        #custom-mini-cart{}
+    </style>
+    <?php 
+        global $woocommerce;
+        $logo = get_field('logo', 'option');
     ?>
 </head>
 
