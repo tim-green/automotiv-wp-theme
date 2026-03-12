@@ -15,11 +15,11 @@
 
     <?php while( have_rows('slider_images','option') ): the_row(); 
 
-    // vars
-    $image = get_sub_field('image','option');
-    $text = get_sub_field('text','option');
-    $button_text = get_sub_field('button_text','option');
-    $button_link = get_sub_field('button_link','option');
+        // vars
+        $image = get_sub_field('image','option');
+        $text = get_sub_field('text','option');
+        $button_text = get_sub_field('button_text','option');
+        $button_link = get_sub_field('button_link','option');
 
     ?>
      <div class="slide">
