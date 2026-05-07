@@ -396,6 +396,22 @@ ul.pwb-row{
 /*WooCommerce tabs*/
 .woocommerce-tabs{
 
+    .nav{
+        li{
+            margin-right: .5em;
+            a{
+                color: $white;
+                transition: ease-out .5s;
+                &:hover{
+                background: $royal-blue;
+                color: $white;
+                border-radius: 0;
+                transition: ease-in .5s;
+            }
+            }
+        }
+    }
+
     margin-top: 2.5em;
     
     .nav-tabs .nav-link{
