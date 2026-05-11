@@ -26,6 +26,13 @@
         display: none;
     }
 
+    .add_to_cart_button{
+        // &:hover{
+        //     border: 4px solid $royal-blue inside; 
+        //     background:$white;
+        //     color: $royal-blue;
+        // }
+    }
     .add_to_cart_button.loading {
         opacity: 0.5;
         &:before {
