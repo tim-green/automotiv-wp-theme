@@ -44,8 +44,6 @@ get_header();
     </div>
 </div>
 
-
-
 <div class="bg-white py-lg-5">
     <div class="container py-5">
         <div class="row home-benefits">

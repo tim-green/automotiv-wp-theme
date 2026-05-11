@@ -705,3 +705,4 @@ function add_to_cart_added_woocommerce(){
         <?php
     endif;
 }
+
