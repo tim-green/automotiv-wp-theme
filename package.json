@@ -15,29 +15,17 @@
     "build": "parcel build assets/js/app.js assets/sass/app.scss --dist-dir ./build --no-source-maps"
   },
   "dependencies": {
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-sass": "^2.0.0",
     "livereload": "^0.9.3"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "^10.4.21",
     "bootstrap": "^4.6.2",
-    "cssnano": "^5.0.15",
-    "grunt": "^1.4.1",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-imagemin": "^4.0.0",
-    "grunt-contrib-jshint": "^3.1.1",
-    "grunt-contrib-uglify": "^5.0.1",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-postcss": "^0.9.0",
-    "grunt-sass": "^3.1.0",
-    "jquery": ">=3.6.0",
-    "load-grunt-tasks": "^5.1.0",
-    "node-sass": "^7.0.1",
+    "cssnano": "^7.1.0",
+    "jquery": ">=3.7.1",
     "parcel": "^2.15.4",
     "@parcel/transformer-sass": "^2.15.4",
     "pixrem": "^5.0.0",
     "popper.js": "^1.16.1",
-    "postcss": "^8.4.5"
+    "postcss": "^8.5.6"
   }
 }
