@@ -16,6 +16,8 @@
 
 /* The Shop */
 .products {
+
+
     .size-woocommerce_thumbnail {
         max-width: 100%;
         height: auto;
@@ -51,7 +53,7 @@
     .h5{
         padding-bottom: .15em;
         margin-bottom: .8em;
-    }
+        }
 }
 
 .woo-side{
@@ -430,6 +432,11 @@ ul.pwb-row{
         color: $white;
     }
 
+    .tab-content{
+        border: 1px solid $lighest-gray;
+        margin-top: 0;
+        border-top: 0;
+    }
     #tab-pwb_tab{
         #tab-pwb_tab-content h3{
             @include fontSize(18px);
