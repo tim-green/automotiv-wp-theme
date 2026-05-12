@@ -55,13 +55,10 @@ $newsletter_form_id = get_field('footer_newsletter_signup_field_id', 'option');
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <p mb-0><?php the_field('copyright_text','option'); ?></p>
                 <div class="mb-3 newsletter">
                     <?php 
-                    if ($newsletter_form_id) {
                         echo '<p class="mb-2 font-weight-bold">Get all the latest product updates, specials and coupons!</p>';
                         echo do_shortcode('[fluentform id="4"]');
-                    }
                      ?>
                 </div>
             </div>
