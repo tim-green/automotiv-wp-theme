@@ -11,9 +11,7 @@ Tags: custom-background, custom-colors, featured-images, flexible-header, microf
 Text Domain: automotiv
 */
 
-/* Don't overwrite this file. Compile "/assets/main.(less|scss)" to "/assets/build/app.min.css" */
-
-
+/* Don't overwrite this file. Compile "/assets/main.scss" to "/assets/build/app.min.css" */
 /* From http://codex.wordpress.org/CSS */
 
 .alignnone {
