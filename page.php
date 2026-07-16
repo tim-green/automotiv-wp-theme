@@ -16,7 +16,9 @@ get_header();
 ?>
 
 <div class="container py-3">
-    <h1 class="py-3 mb-3 title-border"><?php the_title(); ?></h1>
+    <h1 class="py-3 mb-3 title-border">
+		<?php the_title(); ?>
+	</h1>
     <?php
 		while ( have_posts() ) :
 			the_post();
@@ -28,4 +30,5 @@ get_header();
 </div><!-- #primary -->
 
 <?php
-get_footer(); ?>
+	get_footer(); 
+?>
