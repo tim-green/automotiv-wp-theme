@@ -7,7 +7,7 @@ Automotive based WooCommerce theme built with  Greeny Starter Theme/Framework Li
 * WordPress
 * WooCommerce
 * Advanced Custom Fields Pro
-* Gravity Forms.
+* Fluent Forms.
 * FontAwesome
 
 
